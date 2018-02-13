@@ -31,7 +31,7 @@ https://guides.cocoapods.org/using/using-cocoapods
 ```
 Add this line to your Podfile:
 ```
-pod 'FAVPlayer', :git => 'https://github.com/frequency-ios-sdk-public.git', :tag => '1.0.1'
+pod 'FAVPlayer', :git => 'https://github.com/frequency/frequency-ios-sdk-public.git', :tag => '0.0.1'
 ```
 Then in your terminal, at the root of your project, 
 ```
