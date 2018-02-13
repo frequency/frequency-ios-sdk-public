@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0  \
+################################################################\
+\
+STEPS TO BUILD THE FRAMEWORK\
+\
+- Run the project one of the tv simulator\
+--> It should create a Debug-appletvsimulator folder in /Library/Developer/Xcode/DerivedData/\{PROJECT\}/Build/Products\
+- Archive the project on a "Generic tvOS device"\
+- Copy the FAVPlayer-Swift.h situated here /Users/\{USER\}/Library/Developer/Xcode/DerivedData/\{PRODUCT\}/Build/Intermediates.noindex/FAVPlayer.build/Debug-iphoneos/FAVPlayer.build/Objects-normal/arm64 on the main folder\
+--> it should create a Release-appletvos folder in /Library/Developer/Xcode/DerivedData/\{PRODUCT\}/Build/Intermediates.noindex/ArchiveIntermediates/FAVPlayer\
+\
+--> it should create a Release-universal folder in /Library/Developer/Xcode/DerivedData/\{PRODUCT\}/Build/Intermediates.noindex/ArchiveIntermediates/FAVPlayer\
+\
+The framework is located in the Release-universal folder\
+\
+################################################################\
+\
+The script that buiid the universal framework is located under the FAVPlayer Scheme\
+to see it :\
+	Select scheme\
+	Edit scheme\
+	Archive\
+	Post action\
+\
+###############################################################\
+\
+TROUBLESHOOT:\
+\
+When in use in an app if the error complains about missing architecture,\
+- Make sure that the framework Debug-appletvsimulator exists under the appropriate path (/Library/Developer/Xcode/DerivedData/\{PROJECT\}/Build/Products)\
+- Make sure that the framework Release-appletvos exists under the appropriate path (/Library/Developer/Xcode/DerivedData/\{PRODUCT\}/Build/Intermediates.noindex/ArchiveIntermediates/FAVPlayer)\
+\
+re Archive}

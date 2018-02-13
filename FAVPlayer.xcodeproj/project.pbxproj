@@ -1,0 +1,1518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25E983CB1F97705300A8734F /* FAVPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E983C21F97705300A8734F /* FAVPlayer.framework */; };
+		25E984901F9772E500A8734F /* ConsoleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9847E1F9772D300A8734F /* ConsoleTests.swift */; };
+		25E984931F977A9400A8734F /* FAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E984801F9772D300A8734F /* FAVPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		292B08EC202517DC00F13567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292B08EB202517DC00F13567 /* Assets.xcassets */; };
+		292B09452025183F00F13567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292B09442025183F00F13567 /* Main.storyboard */; };
+		292B0948202518F500F13567 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B0947202518F500F13567 /* MainViewController.swift */; };
+		292B0949202518F500F13567 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B0947202518F500F13567 /* MainViewController.swift */; };
+		292B094A2025192E00F13567 /* EJNonRetainingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7C20224D72000703C1 /* EJNonRetainingProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B094B2025193700F13567 /* EJAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5C20224D72000703C1 /* EJAppViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B094C2025193700F13567 /* EJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5F20224D72000703C1 /* EJTimer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B094D2025193700F13567 /* EJJavaScriptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6020224D72000703C1 /* EJJavaScriptView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B094E2025193700F13567 /* EJBindingEventedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6120224D72000703C1 /* EJBindingEventedBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B094F2025193700F13567 /* EJBindingLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6920224D72000703C1 /* EJBindingLocalStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09512025193700F13567 /* EJBindingTouchInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6C20224D72000703C1 /* EJBindingTouchInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09522025193700F13567 /* EJBindingIAPTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6F20224D72000703C1 /* EJBindingIAPTransaction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09532025193700F13567 /* EJBindingIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7120224D72000703C1 /* EJBindingIAPManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09542025193700F13567 /* EJBindingIAPProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7320224D72000703C1 /* EJBindingIAPProduct.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09552025193700F13567 /* EJBindingKeyInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7420224D72000703C1 /* EJBindingKeyInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09562025193700F13567 /* EJBindingGameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7520224D72000703C1 /* EJBindingGameCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09572025193700F13567 /* EJBindingHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7720224D72000703C1 /* EJBindingHttpRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09582025193700F13567 /* EJBindingWindowEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7920224D72000703C1 /* EJBindingWindowEvents.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09592025193700F13567 /* EJClassLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7B20224D72000703C1 /* EJClassLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B095A2025193700F13567 /* EJConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7D20224D72000703C1 /* EJConvert.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B095B2025193700F13567 /* EJBindingGlobalUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8020224D72000703C1 /* EJBindingGlobalUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B095C2025193700F13567 /* EJBindingBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8120224D72000703C1 /* EJBindingBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B095D2025193700F13567 /* EJBindingVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8520224D72000703C1 /* EJBindingVideo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B095F202519C900F13567 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5920224D71000703C1 /* Constant.swift */; };
+		292B0960202519C900F13567 /* FAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8C20224D72000703C1 /* FAVPlayer.swift */; };
+		292B0961202519C900F13567 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8B20224D72000703C1 /* PlayerService.swift */; };
+		292B0962202519C900F13567 /* PlayerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B2420224D71000703C1 /* PlayerInterface.swift */; };
+		292B0963202519C900F13567 /* JSPlayerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B2520224D71000703C1 /* JSPlayerInterface.swift */; };
+		292B0964202519C900F13567 /* PlayerEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B2620224D71000703C1 /* PlayerEventDelegate.swift */; };
+		292B096620251E5900F13567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B096520251E5900F13567 /* AppDelegate.swift */; };
+		292B096720251E5900F13567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B096520251E5900F13567 /* AppDelegate.swift */; };
+		292B096920251E6F00F13567 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 292B096820251E6F00F13567 /* libicucore.tbd */; };
+		292B096E20251FA000F13567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292B08EB202517DC00F13567 /* Assets.xcassets */; };
+		292B096F2025211D00F13567 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5920224D71000703C1 /* Constant.swift */; };
+		292B09702025211D00F13567 /* FAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8C20224D72000703C1 /* FAVPlayer.swift */; };
+		292B09712025211D00F13567 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8B20224D72000703C1 /* PlayerService.swift */; };
+		292B09722025211D00F13567 /* PlayerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B2420224D71000703C1 /* PlayerInterface.swift */; };
+		292B09732025211D00F13567 /* JSPlayerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B2520224D71000703C1 /* JSPlayerInterface.swift */; };
+		292B09742025211D00F13567 /* PlayerEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B2620224D71000703C1 /* PlayerEventDelegate.swift */; };
+		292B09752025212C00F13567 /* EJBindingLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6920224D72000703C1 /* EJBindingLocalStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09772025212C00F13567 /* EJBindingTouchInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6C20224D72000703C1 /* EJBindingTouchInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09782025212C00F13567 /* EJBindingIAPTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6F20224D72000703C1 /* EJBindingIAPTransaction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09792025212C00F13567 /* EJBindingIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7120224D72000703C1 /* EJBindingIAPManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B097A2025212C00F13567 /* EJBindingIAPProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7320224D72000703C1 /* EJBindingIAPProduct.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B097B2025212C00F13567 /* EJBindingKeyInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7420224D72000703C1 /* EJBindingKeyInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B097C2025212C00F13567 /* EJBindingGameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7520224D72000703C1 /* EJBindingGameCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B097D2025212C00F13567 /* EJBindingHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7720224D72000703C1 /* EJBindingHttpRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B097E2025212C00F13567 /* EJBindingWindowEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7920224D72000703C1 /* EJBindingWindowEvents.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B097F2025212C00F13567 /* EJAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5C20224D72000703C1 /* EJAppViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09802025212C00F13567 /* EJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5F20224D72000703C1 /* EJTimer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09812025212C00F13567 /* EJJavaScriptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6020224D72000703C1 /* EJJavaScriptView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09822025212C00F13567 /* EJBindingEventedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6120224D72000703C1 /* EJBindingEventedBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09832025212C00F13567 /* EJClassLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7B20224D72000703C1 /* EJClassLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09842025212C00F13567 /* EJNonRetainingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7C20224D72000703C1 /* EJNonRetainingProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09852025212C00F13567 /* EJConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7D20224D72000703C1 /* EJConvert.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09862025212C00F13567 /* EJBindingGlobalUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8020224D72000703C1 /* EJBindingGlobalUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09872025212C00F13567 /* EJBindingBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8120224D72000703C1 /* EJBindingBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B09882025212C00F13567 /* EJBindingVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8520224D72000703C1 /* EJBindingVideo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		292B098C2025220000F13567 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 292B098B202521FF00F13567 /* libicucore.tbd */; };
+		292B098D202529C000F13567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292B09422025183200F13567 /* Main.storyboard */; };
+		292B0992202A2ABB00F13567 /* ConvivaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B0991202A2ABB00F13567 /* ConvivaConfig.swift */; };
+		292B0993202A2ABB00F13567 /* ConvivaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B0991202A2ABB00F13567 /* ConvivaConfig.swift */; };
+		292B0994202A2ABB00F13567 /* ConvivaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B0991202A2ABB00F13567 /* ConvivaConfig.swift */; };
+		298AA7E02024F10F001DEFF6 /* FAVPlayer.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 298AA7DF2024F10F001DEFF6 /* FAVPlayer.xcconfig */; };
+		299B9B8E20224D73000703C1 /* PlayerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B2420224D71000703C1 /* PlayerInterface.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9B8F20224D73000703C1 /* JSPlayerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B2520224D71000703C1 /* JSPlayerInterface.swift */; };
+		299B9B9020224D73000703C1 /* PlayerEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B2620224D71000703C1 /* PlayerEventDelegate.swift */; };
+		299B9BBD20224D73000703C1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5920224D71000703C1 /* Constant.swift */; };
+		299B9BBF20224D73000703C1 /* EJAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5C20224D72000703C1 /* EJAppViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BC020224D73000703C1 /* EJConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B5D20224D72000703C1 /* EJConvert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BC120224D73000703C1 /* EJNonRetainingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B5E20224D72000703C1 /* EJNonRetainingProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BC220224D73000703C1 /* EJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5F20224D72000703C1 /* EJTimer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BC320224D73000703C1 /* EJJavaScriptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6020224D72000703C1 /* EJJavaScriptView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BC420224D73000703C1 /* EJBindingEventedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6120224D72000703C1 /* EJBindingEventedBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BC520224D73000703C1 /* EJBindingBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B6220224D72000703C1 /* EJBindingBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BC620224D73000703C1 /* EJBindingGlobalUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B6320224D72000703C1 /* EJBindingGlobalUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BC720224D73000703C1 /* EJBindingTouchInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B6520224D72000703C1 /* EJBindingTouchInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BC820224D73000703C1 /* EJBindingGameCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B6620224D72000703C1 /* EJBindingGameCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BC920224D73000703C1 /* EJBindingKeyInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B6720224D72000703C1 /* EJBindingKeyInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BCA20224D73000703C1 /* EJBindingWindowEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B6820224D72000703C1 /* EJBindingWindowEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BCB20224D73000703C1 /* EJBindingLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6920224D72000703C1 /* EJBindingLocalStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BCC20224D73000703C1 /* EJBindingHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B6A20224D72000703C1 /* EJBindingHttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BCE20224D73000703C1 /* EJBindingTouchInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6C20224D72000703C1 /* EJBindingTouchInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BCF20224D73000703C1 /* EJBindingIAPManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B6E20224D72000703C1 /* EJBindingIAPManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BD020224D73000703C1 /* EJBindingIAPTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B6F20224D72000703C1 /* EJBindingIAPTransaction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BD120224D73000703C1 /* EJBindingIAPProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B7020224D72000703C1 /* EJBindingIAPProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BD220224D73000703C1 /* EJBindingIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7120224D72000703C1 /* EJBindingIAPManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BD320224D73000703C1 /* EJBindingIAPTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B7220224D72000703C1 /* EJBindingIAPTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BD420224D73000703C1 /* EJBindingIAPProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7320224D72000703C1 /* EJBindingIAPProduct.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BD520224D73000703C1 /* EJBindingKeyInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7420224D72000703C1 /* EJBindingKeyInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BD620224D73000703C1 /* EJBindingGameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7520224D72000703C1 /* EJBindingGameCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BD820224D73000703C1 /* EJBindingHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7720224D72000703C1 /* EJBindingHttpRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BD920224D73000703C1 /* EJBindingLocalStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B7820224D72000703C1 /* EJBindingLocalStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BDA20224D73000703C1 /* EJBindingWindowEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7920224D72000703C1 /* EJBindingWindowEvents.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BDB20224D73000703C1 /* EJBindingVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B7A20224D72000703C1 /* EJBindingVideo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BDC20224D73000703C1 /* EJClassLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7B20224D72000703C1 /* EJClassLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BDD20224D73000703C1 /* EJNonRetainingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7C20224D72000703C1 /* EJNonRetainingProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BDE20224D73000703C1 /* EJConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B7D20224D72000703C1 /* EJConvert.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BDF20224D73000703C1 /* EJAppViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B7E20224D72000703C1 /* EJAppViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BE020224D73000703C1 /* EJTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B7F20224D72000703C1 /* EJTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BE120224D73000703C1 /* EJBindingGlobalUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8020224D72000703C1 /* EJBindingGlobalUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BE220224D73000703C1 /* EJBindingBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8120224D72000703C1 /* EJBindingBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BE320224D73000703C1 /* EJBindingEventedBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B8220224D72000703C1 /* EJBindingEventedBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BE420224D73000703C1 /* EJJavaScriptView.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B8320224D72000703C1 /* EJJavaScriptView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BE520224D73000703C1 /* EJClassLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B8420224D72000703C1 /* EJClassLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BE620224D73000703C1 /* EJBindingVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8520224D72000703C1 /* EJBindingVideo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		299B9BEA20224D73000703C1 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8B20224D72000703C1 /* PlayerService.swift */; };
+		299B9BEB20224D73000703C1 /* FAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8C20224D72000703C1 /* FAVPlayer.swift */; };
+		299B9BEC20224D73000703C1 /* Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 299B9B8D20224D72000703C1 /* Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		299B9BF020224DA6000703C1 /* Ejecta.js in Resources */ = {isa = PBXBuildFile; fileRef = 299B9BEE20224DA6000703C1 /* Ejecta.js */; };
+		299B9BF120224DA6000703C1 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 299B9BEF20224DA6000703C1 /* index.js */; };
+		299B9BF420224F74000703C1 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 299B9BF320224F74000703C1 /* libicucore.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25E983CC1F97705300A8734F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25E9839A1F976FEB00A8734F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25E983C11F97705300A8734F;
+			remoteInfo = "Console-macOS";
+		};
+		292B08F6202517DC00F13567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25E9839A1F976FEB00A8734F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292B08DE202517DC00F13567;
+			remoteInfo = FAVPlayerDemo_iOS;
+		};
+		292B0901202517DC00F13567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25E9839A1F976FEB00A8734F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292B08DE202517DC00F13567;
+			remoteInfo = FAVPlayerDemo_iOS;
+		};
+		292B09282025181300F13567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25E9839A1F976FEB00A8734F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292B09132025181300F13567;
+			remoteInfo = FAVPlayerDemo_tvOS;
+		};
+		292B09332025181300F13567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25E9839A1F976FEB00A8734F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292B09132025181300F13567;
+			remoteInfo = FAVPlayerDemo_tvOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		254B79EB1F97800B00DCD8D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		254B79EF1F97808600DCD8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25E983C21F97705300A8734F /* FAVPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FAVPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E983CA1F97705300A8734F /* FAVPlayer-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FAVPlayer-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E9847E1F9772D300A8734F /* ConsoleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleTests.swift; sourceTree = "<group>"; };
+		25E984801F9772D300A8734F /* FAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAVPlayer.h; sourceTree = "<group>"; };
+		292B08DF202517DC00F13567 /* FAVPlayerDemo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAVPlayerDemo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		292B08EB202517DC00F13567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		292B08F0202517DC00F13567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292B08F5202517DC00F13567 /* FAVPlayerDemo_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAVPlayerDemo_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		292B0900202517DC00F13567 /* FAVPlayerDemo_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAVPlayerDemo_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		292B09142025181300F13567 /* FAVPlayerDemo_tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAVPlayerDemo_tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		292B09272025181300F13567 /* FAVPlayerDemo_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAVPlayerDemo_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		292B09322025181300F13567 /* FAVPlayerDemo_tvOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAVPlayerDemo_tvOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		292B09422025183200F13567 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		292B09442025183F00F13567 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		292B0946202518F400F13567 /* FAVPlayerDemo_tvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FAVPlayerDemo_tvOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		292B0947202518F500F13567 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		292B096520251E5900F13567 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		292B096820251E6F00F13567 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		292B098A202521B700F13567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292B098B202521FF00F13567 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
+		292B0991202A2ABB00F13567 /* ConvivaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvivaConfig.swift; sourceTree = "<group>"; };
+		298AA7DF2024F10F001DEFF6 /* FAVPlayer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FAVPlayer.xcconfig; sourceTree = "<group>"; };
+		298AA7E82024FE7C001DEFF6 /* README-BUILD_INSTRUCTION.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "README-BUILD_INSTRUCTION.rtf"; sourceTree = "<group>"; };
+		299B9B2420224D71000703C1 /* PlayerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInterface.swift; sourceTree = "<group>"; };
+		299B9B2520224D71000703C1 /* JSPlayerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSPlayerInterface.swift; sourceTree = "<group>"; };
+		299B9B2620224D71000703C1 /* PlayerEventDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerEventDelegate.swift; sourceTree = "<group>"; };
+		299B9B5920224D71000703C1 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		299B9B5C20224D72000703C1 /* EJAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAppViewController.m; sourceTree = "<group>"; };
+		299B9B5D20224D72000703C1 /* EJConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJConvert.h; sourceTree = "<group>"; };
+		299B9B5E20224D72000703C1 /* EJNonRetainingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJNonRetainingProxy.h; sourceTree = "<group>"; };
+		299B9B5F20224D72000703C1 /* EJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJTimer.m; sourceTree = "<group>"; };
+		299B9B6020224D72000703C1 /* EJJavaScriptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJJavaScriptView.m; sourceTree = "<group>"; };
+		299B9B6120224D72000703C1 /* EJBindingEventedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingEventedBase.m; sourceTree = "<group>"; };
+		299B9B6220224D72000703C1 /* EJBindingBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingBase.h; sourceTree = "<group>"; };
+		299B9B6320224D72000703C1 /* EJBindingGlobalUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingGlobalUtils.h; sourceTree = "<group>"; };
+		299B9B6520224D72000703C1 /* EJBindingTouchInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingTouchInput.h; sourceTree = "<group>"; };
+		299B9B6620224D72000703C1 /* EJBindingGameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingGameCenter.h; sourceTree = "<group>"; };
+		299B9B6720224D72000703C1 /* EJBindingKeyInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingKeyInput.h; sourceTree = "<group>"; };
+		299B9B6820224D72000703C1 /* EJBindingWindowEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingWindowEvents.h; sourceTree = "<group>"; };
+		299B9B6920224D72000703C1 /* EJBindingLocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingLocalStorage.m; sourceTree = "<group>"; };
+		299B9B6A20224D72000703C1 /* EJBindingHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingHttpRequest.h; sourceTree = "<group>"; };
+		299B9B6C20224D72000703C1 /* EJBindingTouchInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingTouchInput.m; sourceTree = "<group>"; };
+		299B9B6E20224D72000703C1 /* EJBindingIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingIAPManager.h; sourceTree = "<group>"; };
+		299B9B6F20224D72000703C1 /* EJBindingIAPTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingIAPTransaction.m; sourceTree = "<group>"; };
+		299B9B7020224D72000703C1 /* EJBindingIAPProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingIAPProduct.h; sourceTree = "<group>"; };
+		299B9B7120224D72000703C1 /* EJBindingIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingIAPManager.m; sourceTree = "<group>"; };
+		299B9B7220224D72000703C1 /* EJBindingIAPTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingIAPTransaction.h; sourceTree = "<group>"; };
+		299B9B7320224D72000703C1 /* EJBindingIAPProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingIAPProduct.m; sourceTree = "<group>"; };
+		299B9B7420224D72000703C1 /* EJBindingKeyInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingKeyInput.m; sourceTree = "<group>"; };
+		299B9B7520224D72000703C1 /* EJBindingGameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingGameCenter.m; sourceTree = "<group>"; };
+		299B9B7720224D72000703C1 /* EJBindingHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingHttpRequest.m; sourceTree = "<group>"; };
+		299B9B7820224D72000703C1 /* EJBindingLocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingLocalStorage.h; sourceTree = "<group>"; };
+		299B9B7920224D72000703C1 /* EJBindingWindowEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingWindowEvents.m; sourceTree = "<group>"; };
+		299B9B7A20224D72000703C1 /* EJBindingVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingVideo.h; sourceTree = "<group>"; };
+		299B9B7B20224D72000703C1 /* EJClassLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJClassLoader.m; sourceTree = "<group>"; };
+		299B9B7C20224D72000703C1 /* EJNonRetainingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJNonRetainingProxy.m; sourceTree = "<group>"; };
+		299B9B7D20224D72000703C1 /* EJConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJConvert.m; sourceTree = "<group>"; };
+		299B9B7E20224D72000703C1 /* EJAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAppViewController.h; sourceTree = "<group>"; };
+		299B9B7F20224D72000703C1 /* EJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJTimer.h; sourceTree = "<group>"; };
+		299B9B8020224D72000703C1 /* EJBindingGlobalUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingGlobalUtils.m; sourceTree = "<group>"; };
+		299B9B8120224D72000703C1 /* EJBindingBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingBase.m; sourceTree = "<group>"; };
+		299B9B8220224D72000703C1 /* EJBindingEventedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingEventedBase.h; sourceTree = "<group>"; };
+		299B9B8320224D72000703C1 /* EJJavaScriptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJJavaScriptView.h; sourceTree = "<group>"; };
+		299B9B8420224D72000703C1 /* EJClassLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJClassLoader.h; sourceTree = "<group>"; };
+		299B9B8520224D72000703C1 /* EJBindingVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingVideo.m; sourceTree = "<group>"; };
+		299B9B8B20224D72000703C1 /* PlayerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		299B9B8C20224D72000703C1 /* FAVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAVPlayer.swift; sourceTree = "<group>"; };
+		299B9B8D20224D72000703C1 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		299B9BEE20224DA6000703C1 /* Ejecta.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Ejecta.js; sourceTree = "<group>"; };
+		299B9BEF20224DA6000703C1 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		299B9BF320224F74000703C1 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25E983BE1F97705300A8734F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299B9BF420224F74000703C1 /* libicucore.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25E983C71F97705300A8734F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E983CB1F97705300A8734F /* FAVPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B08DC202517DC00F13567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B096920251E6F00F13567 /* libicucore.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B08F2202517DC00F13567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B08FD202517DC00F13567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B09112025181300F13567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B098C2025220000F13567 /* libicucore.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B09242025181300F13567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B092F2025181300F13567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25E983991F976FEB00A8734F = {
+			isa = PBXGroup;
+			children = (
+				298AA7E82024FE7C001DEFF6 /* README-BUILD_INSTRUCTION.rtf */,
+				292B0946202518F400F13567 /* FAVPlayerDemo_tvOS-Bridging-Header.h */,
+				25E984821F9772D300A8734F /* Assets */,
+				25E9847F1F9772D300A8734F /* Sources */,
+				25E984751F9772D300A8734F /* Tests */,
+				25E983A41F976FEB00A8734F /* Products */,
+				299B9BF220224F74000703C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		25E983A41F976FEB00A8734F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25E983C21F97705300A8734F /* FAVPlayer.framework */,
+				25E983CA1F97705300A8734F /* FAVPlayer-Tests.xctest */,
+				292B08DF202517DC00F13567 /* FAVPlayerDemo_iOS.app */,
+				292B08F5202517DC00F13567 /* FAVPlayerDemo_iOSTests.xctest */,
+				292B0900202517DC00F13567 /* FAVPlayerDemo_iOSUITests.xctest */,
+				292B09142025181300F13567 /* FAVPlayerDemo_tvOS.app */,
+				292B09272025181300F13567 /* FAVPlayerDemo_tvOSTests.xctest */,
+				292B09322025181300F13567 /* FAVPlayerDemo_tvOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25E984751F9772D300A8734F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				25E984761F9772D300A8734F /* Assets */,
+				25E9847D1F9772D300A8734F /* Sources */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		25E984761F9772D300A8734F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				254B79EF1F97808600DCD8D8 /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		25E9847D1F9772D300A8734F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				25E9847E1F9772D300A8734F /* ConsoleTests.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		25E9847F1F9772D300A8734F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				292B0990202A2A7600F13567 /* utils */,
+				299B9B8D20224D72000703C1 /* Prefix.pch */,
+				292B08D8202516A500F13567 /* Demo */,
+				292B08D72025168F00F13567 /* FAVPlayer */,
+				299B9B5B20224D72000703C1 /* Ejecta */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		25E984821F9772D300A8734F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				299B9BEE20224DA6000703C1 /* Ejecta.js */,
+				299B9BEF20224DA6000703C1 /* index.js */,
+				298AA7DF2024F10F001DEFF6 /* FAVPlayer.xcconfig */,
+				254B79EB1F97800B00DCD8D8 /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		292B08D72025168F00F13567 /* FAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				299B9B5920224D71000703C1 /* Constant.swift */,
+				299B9B8C20224D72000703C1 /* FAVPlayer.swift */,
+				299B9B8B20224D72000703C1 /* PlayerService.swift */,
+				25E984801F9772D300A8734F /* FAVPlayer.h */,
+				299B9B2320224D71000703C1 /* protocols */,
+			);
+			path = FAVPlayer;
+			sourceTree = "<group>";
+		};
+		292B08D8202516A500F13567 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				292B0947202518F500F13567 /* MainViewController.swift */,
+				292B096520251E5900F13567 /* AppDelegate.swift */,
+				292B08EB202517DC00F13567 /* Assets.xcassets */,
+				292B08DA202516D000F13567 /* tvOS */,
+				292B08D9202516C500F13567 /* iOS */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		292B08D9202516C500F13567 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				292B08F0202517DC00F13567 /* Info.plist */,
+				292B09442025183F00F13567 /* Main.storyboard */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		292B08DA202516D000F13567 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				292B098A202521B700F13567 /* Info.plist */,
+				292B09422025183200F13567 /* Main.storyboard */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		292B0990202A2A7600F13567 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				292B0991202A2ABB00F13567 /* ConvivaConfig.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		299B9B2320224D71000703C1 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				299B9B2420224D71000703C1 /* PlayerInterface.swift */,
+				299B9B2520224D71000703C1 /* JSPlayerInterface.swift */,
+				299B9B2620224D71000703C1 /* PlayerEventDelegate.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		299B9B5B20224D72000703C1 /* Ejecta */ = {
+			isa = PBXGroup;
+			children = (
+				299B9B6420224D72000703C1 /* EJUtils */,
+				299B9B5C20224D72000703C1 /* EJAppViewController.m */,
+				299B9B5D20224D72000703C1 /* EJConvert.h */,
+				299B9B5E20224D72000703C1 /* EJNonRetainingProxy.h */,
+				299B9B5F20224D72000703C1 /* EJTimer.m */,
+				299B9B6020224D72000703C1 /* EJJavaScriptView.m */,
+				299B9B6120224D72000703C1 /* EJBindingEventedBase.m */,
+				299B9B6220224D72000703C1 /* EJBindingBase.h */,
+				299B9B6320224D72000703C1 /* EJBindingGlobalUtils.h */,
+				299B9B7A20224D72000703C1 /* EJBindingVideo.h */,
+				299B9B7B20224D72000703C1 /* EJClassLoader.m */,
+				299B9B7C20224D72000703C1 /* EJNonRetainingProxy.m */,
+				299B9B7D20224D72000703C1 /* EJConvert.m */,
+				299B9B7E20224D72000703C1 /* EJAppViewController.h */,
+				299B9B7F20224D72000703C1 /* EJTimer.h */,
+				299B9B8020224D72000703C1 /* EJBindingGlobalUtils.m */,
+				299B9B8120224D72000703C1 /* EJBindingBase.m */,
+				299B9B8220224D72000703C1 /* EJBindingEventedBase.h */,
+				299B9B8320224D72000703C1 /* EJJavaScriptView.h */,
+				299B9B8420224D72000703C1 /* EJClassLoader.h */,
+				299B9B8520224D72000703C1 /* EJBindingVideo.m */,
+			);
+			path = Ejecta;
+			sourceTree = "<group>";
+		};
+		299B9B6420224D72000703C1 /* EJUtils */ = {
+			isa = PBXGroup;
+			children = (
+				299B9B6520224D72000703C1 /* EJBindingTouchInput.h */,
+				299B9B6620224D72000703C1 /* EJBindingGameCenter.h */,
+				299B9B6720224D72000703C1 /* EJBindingKeyInput.h */,
+				299B9B6820224D72000703C1 /* EJBindingWindowEvents.h */,
+				299B9B6920224D72000703C1 /* EJBindingLocalStorage.m */,
+				299B9B6A20224D72000703C1 /* EJBindingHttpRequest.h */,
+				299B9B6C20224D72000703C1 /* EJBindingTouchInput.m */,
+				299B9B6D20224D72000703C1 /* IAP */,
+				299B9B7420224D72000703C1 /* EJBindingKeyInput.m */,
+				299B9B7520224D72000703C1 /* EJBindingGameCenter.m */,
+				299B9B7720224D72000703C1 /* EJBindingHttpRequest.m */,
+				299B9B7820224D72000703C1 /* EJBindingLocalStorage.h */,
+				299B9B7920224D72000703C1 /* EJBindingWindowEvents.m */,
+			);
+			path = EJUtils;
+			sourceTree = "<group>";
+		};
+		299B9B6D20224D72000703C1 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				299B9B6E20224D72000703C1 /* EJBindingIAPManager.h */,
+				299B9B6F20224D72000703C1 /* EJBindingIAPTransaction.m */,
+				299B9B7020224D72000703C1 /* EJBindingIAPProduct.h */,
+				299B9B7120224D72000703C1 /* EJBindingIAPManager.m */,
+				299B9B7220224D72000703C1 /* EJBindingIAPTransaction.h */,
+				299B9B7320224D72000703C1 /* EJBindingIAPProduct.m */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		299B9BF220224F74000703C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				292B098B202521FF00F13567 /* libicucore.tbd */,
+				292B096820251E6F00F13567 /* libicucore.tbd */,
+				299B9BF320224F74000703C1 /* libicucore.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		25E983BF1F97705300A8734F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299B9BE420224D73000703C1 /* EJJavaScriptView.h in Headers */,
+				299B9BEC20224D73000703C1 /* Prefix.pch in Headers */,
+				299B9BC520224D73000703C1 /* EJBindingBase.h in Headers */,
+				299B9BD120224D73000703C1 /* EJBindingIAPProduct.h in Headers */,
+				299B9BC720224D73000703C1 /* EJBindingTouchInput.h in Headers */,
+				299B9BC020224D73000703C1 /* EJConvert.h in Headers */,
+				299B9BD920224D73000703C1 /* EJBindingLocalStorage.h in Headers */,
+				299B9BC820224D73000703C1 /* EJBindingGameCenter.h in Headers */,
+				299B9BCF20224D73000703C1 /* EJBindingIAPManager.h in Headers */,
+				299B9BDF20224D73000703C1 /* EJAppViewController.h in Headers */,
+				299B9BDB20224D73000703C1 /* EJBindingVideo.h in Headers */,
+				299B9BC920224D73000703C1 /* EJBindingKeyInput.h in Headers */,
+				299B9BE320224D73000703C1 /* EJBindingEventedBase.h in Headers */,
+				299B9BCC20224D73000703C1 /* EJBindingHttpRequest.h in Headers */,
+				299B9BCA20224D73000703C1 /* EJBindingWindowEvents.h in Headers */,
+				299B9BC620224D73000703C1 /* EJBindingGlobalUtils.h in Headers */,
+				299B9BC120224D73000703C1 /* EJNonRetainingProxy.h in Headers */,
+				299B9BE520224D73000703C1 /* EJClassLoader.h in Headers */,
+				299B9BE020224D73000703C1 /* EJTimer.h in Headers */,
+				299B9BD320224D73000703C1 /* EJBindingIAPTransaction.h in Headers */,
+				25E984931F977A9400A8734F /* FAVPlayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25E983C11F97705300A8734F /* FAVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25E983D31F97705300A8734F /* Build configuration list for PBXNativeTarget "FAVPlayer" */;
+			buildPhases = (
+				25E983BD1F97705300A8734F /* Sources */,
+				25E983BE1F97705300A8734F /* Frameworks */,
+				25E983BF1F97705300A8734F /* Headers */,
+				25E983C01F97705300A8734F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FAVPlayer;
+			productName = "Console-macOS";
+			productReference = 25E983C21F97705300A8734F /* FAVPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		25E983C91F97705300A8734F /* FAVPlayer-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25E983D61F97705300A8734F /* Build configuration list for PBXNativeTarget "FAVPlayer-Tests" */;
+			buildPhases = (
+				25E983C61F97705300A8734F /* Sources */,
+				25E983C71F97705300A8734F /* Frameworks */,
+				25E983C81F97705300A8734F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25E983CD1F97705300A8734F /* PBXTargetDependency */,
+			);
+			name = "FAVPlayer-Tests";
+			productName = "Console-macOSTests";
+			productReference = 25E983CA1F97705300A8734F /* FAVPlayer-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		292B08DE202517DC00F13567 /* FAVPlayerDemo_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292B0907202517DC00F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_iOS" */;
+			buildPhases = (
+				292B08DB202517DC00F13567 /* Sources */,
+				292B08DC202517DC00F13567 /* Frameworks */,
+				292B08DD202517DC00F13567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FAVPlayerDemo_iOS;
+			productName = FAVPlayerDemo_iOS;
+			productReference = 292B08DF202517DC00F13567 /* FAVPlayerDemo_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		292B08F4202517DC00F13567 /* FAVPlayerDemo_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292B090A202517DC00F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_iOSTests" */;
+			buildPhases = (
+				292B08F1202517DC00F13567 /* Sources */,
+				292B08F2202517DC00F13567 /* Frameworks */,
+				292B08F3202517DC00F13567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292B08F7202517DC00F13567 /* PBXTargetDependency */,
+			);
+			name = FAVPlayerDemo_iOSTests;
+			productName = FAVPlayerDemo_iOSTests;
+			productReference = 292B08F5202517DC00F13567 /* FAVPlayerDemo_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		292B08FF202517DC00F13567 /* FAVPlayerDemo_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292B090D202517DC00F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_iOSUITests" */;
+			buildPhases = (
+				292B08FC202517DC00F13567 /* Sources */,
+				292B08FD202517DC00F13567 /* Frameworks */,
+				292B08FE202517DC00F13567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292B0902202517DC00F13567 /* PBXTargetDependency */,
+			);
+			name = FAVPlayerDemo_iOSUITests;
+			productName = FAVPlayerDemo_iOSUITests;
+			productReference = 292B0900202517DC00F13567 /* FAVPlayerDemo_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		292B09132025181300F13567 /* FAVPlayerDemo_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292B09392025181300F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_tvOS" */;
+			buildPhases = (
+				292B09102025181300F13567 /* Sources */,
+				292B09112025181300F13567 /* Frameworks */,
+				292B09122025181300F13567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FAVPlayerDemo_tvOS;
+			productName = FAVPlayerDemo_tvOS;
+			productReference = 292B09142025181300F13567 /* FAVPlayerDemo_tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		292B09262025181300F13567 /* FAVPlayerDemo_tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292B093C2025181300F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_tvOSTests" */;
+			buildPhases = (
+				292B09232025181300F13567 /* Sources */,
+				292B09242025181300F13567 /* Frameworks */,
+				292B09252025181300F13567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292B09292025181300F13567 /* PBXTargetDependency */,
+			);
+			name = FAVPlayerDemo_tvOSTests;
+			productName = FAVPlayerDemo_tvOSTests;
+			productReference = 292B09272025181300F13567 /* FAVPlayerDemo_tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		292B09312025181300F13567 /* FAVPlayerDemo_tvOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292B093F2025181300F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_tvOSUITests" */;
+			buildPhases = (
+				292B092E2025181300F13567 /* Sources */,
+				292B092F2025181300F13567 /* Frameworks */,
+				292B09302025181300F13567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292B09342025181300F13567 /* PBXTargetDependency */,
+			);
+			name = FAVPlayerDemo_tvOSUITests;
+			productName = FAVPlayerDemo_tvOSUITests;
+			productReference = 292B09322025181300F13567 /* FAVPlayerDemo_tvOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25E9839A1F976FEB00A8734F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Tibor Bodecs";
+				TargetAttributes = {
+					25E983C11F97705300A8734F = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Manual;
+					};
+					25E983C91F97705300A8734F = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					292B08DE202517DC00F13567 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					292B08F4202517DC00F13567 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 292B08DE202517DC00F13567;
+					};
+					292B08FF202517DC00F13567 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 292B08DE202517DC00F13567;
+					};
+					292B09132025181300F13567 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					292B09262025181300F13567 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 292B09132025181300F13567;
+					};
+					292B09312025181300F13567 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 292B09132025181300F13567;
+					};
+				};
+			};
+			buildConfigurationList = 25E9839D1F976FEB00A8734F /* Build configuration list for PBXProject "FAVPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25E983991F976FEB00A8734F;
+			productRefGroup = 25E983A41F976FEB00A8734F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25E983C11F97705300A8734F /* FAVPlayer */,
+				25E983C91F97705300A8734F /* FAVPlayer-Tests */,
+				292B08DE202517DC00F13567 /* FAVPlayerDemo_iOS */,
+				292B08F4202517DC00F13567 /* FAVPlayerDemo_iOSTests */,
+				292B08FF202517DC00F13567 /* FAVPlayerDemo_iOSUITests */,
+				292B09132025181300F13567 /* FAVPlayerDemo_tvOS */,
+				292B09262025181300F13567 /* FAVPlayerDemo_tvOSTests */,
+				292B09312025181300F13567 /* FAVPlayerDemo_tvOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25E983C01F97705300A8734F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299B9BF120224DA6000703C1 /* index.js in Resources */,
+				299B9BF020224DA6000703C1 /* Ejecta.js in Resources */,
+				298AA7E02024F10F001DEFF6 /* FAVPlayer.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25E983C81F97705300A8734F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B08DD202517DC00F13567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B09452025183F00F13567 /* Main.storyboard in Resources */,
+				292B08EC202517DC00F13567 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B08F3202517DC00F13567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B08FE202517DC00F13567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B09122025181300F13567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B098D202529C000F13567 /* Main.storyboard in Resources */,
+				292B096E20251FA000F13567 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B09252025181300F13567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B09302025181300F13567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25E983BD1F97705300A8734F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299B9BC320224D73000703C1 /* EJJavaScriptView.m in Sources */,
+				299B9BE220224D73000703C1 /* EJBindingBase.m in Sources */,
+				299B9BDC20224D73000703C1 /* EJClassLoader.m in Sources */,
+				299B9BD520224D73000703C1 /* EJBindingKeyInput.m in Sources */,
+				299B9BCB20224D73000703C1 /* EJBindingLocalStorage.m in Sources */,
+				299B9BD620224D73000703C1 /* EJBindingGameCenter.m in Sources */,
+				299B9BD420224D73000703C1 /* EJBindingIAPProduct.m in Sources */,
+				299B9BDD20224D73000703C1 /* EJNonRetainingProxy.m in Sources */,
+				299B9BC220224D73000703C1 /* EJTimer.m in Sources */,
+				299B9BD220224D73000703C1 /* EJBindingIAPManager.m in Sources */,
+				299B9BDA20224D73000703C1 /* EJBindingWindowEvents.m in Sources */,
+				299B9BD820224D73000703C1 /* EJBindingHttpRequest.m in Sources */,
+				299B9BE120224D73000703C1 /* EJBindingGlobalUtils.m in Sources */,
+				299B9BC420224D73000703C1 /* EJBindingEventedBase.m in Sources */,
+				299B9BBF20224D73000703C1 /* EJAppViewController.m in Sources */,
+				299B9BD020224D73000703C1 /* EJBindingIAPTransaction.m in Sources */,
+				299B9BE620224D73000703C1 /* EJBindingVideo.m in Sources */,
+				299B9BDE20224D73000703C1 /* EJConvert.m in Sources */,
+				299B9BCE20224D73000703C1 /* EJBindingTouchInput.m in Sources */,
+				299B9B8E20224D73000703C1 /* PlayerInterface.swift in Sources */,
+				299B9BEA20224D73000703C1 /* PlayerService.swift in Sources */,
+				299B9BBD20224D73000703C1 /* Constant.swift in Sources */,
+				299B9BEB20224D73000703C1 /* FAVPlayer.swift in Sources */,
+				299B9B8F20224D73000703C1 /* JSPlayerInterface.swift in Sources */,
+				292B0992202A2ABB00F13567 /* ConvivaConfig.swift in Sources */,
+				299B9B9020224D73000703C1 /* PlayerEventDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25E983C61F97705300A8734F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25E984901F9772E500A8734F /* ConsoleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B08DB202517DC00F13567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B095F202519C900F13567 /* Constant.swift in Sources */,
+				292B0960202519C900F13567 /* FAVPlayer.swift in Sources */,
+				292B0961202519C900F13567 /* PlayerService.swift in Sources */,
+				292B0962202519C900F13567 /* PlayerInterface.swift in Sources */,
+				292B096620251E5900F13567 /* AppDelegate.swift in Sources */,
+				292B0963202519C900F13567 /* JSPlayerInterface.swift in Sources */,
+				292B0964202519C900F13567 /* PlayerEventDelegate.swift in Sources */,
+				292B0948202518F500F13567 /* MainViewController.swift in Sources */,
+				292B094B2025193700F13567 /* EJAppViewController.m in Sources */,
+				292B094C2025193700F13567 /* EJTimer.m in Sources */,
+				292B094D2025193700F13567 /* EJJavaScriptView.m in Sources */,
+				292B094E2025193700F13567 /* EJBindingEventedBase.m in Sources */,
+				292B094F2025193700F13567 /* EJBindingLocalStorage.m in Sources */,
+				292B09512025193700F13567 /* EJBindingTouchInput.m in Sources */,
+				292B09522025193700F13567 /* EJBindingIAPTransaction.m in Sources */,
+				292B0993202A2ABB00F13567 /* ConvivaConfig.swift in Sources */,
+				292B09532025193700F13567 /* EJBindingIAPManager.m in Sources */,
+				292B09542025193700F13567 /* EJBindingIAPProduct.m in Sources */,
+				292B09552025193700F13567 /* EJBindingKeyInput.m in Sources */,
+				292B09562025193700F13567 /* EJBindingGameCenter.m in Sources */,
+				292B09572025193700F13567 /* EJBindingHttpRequest.m in Sources */,
+				292B09582025193700F13567 /* EJBindingWindowEvents.m in Sources */,
+				292B09592025193700F13567 /* EJClassLoader.m in Sources */,
+				292B095A2025193700F13567 /* EJConvert.m in Sources */,
+				292B095B2025193700F13567 /* EJBindingGlobalUtils.m in Sources */,
+				292B095C2025193700F13567 /* EJBindingBase.m in Sources */,
+				292B095D2025193700F13567 /* EJBindingVideo.m in Sources */,
+				292B094A2025192E00F13567 /* EJNonRetainingProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B08F1202517DC00F13567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B08FC202517DC00F13567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B09102025181300F13567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292B09752025212C00F13567 /* EJBindingLocalStorage.m in Sources */,
+				292B09772025212C00F13567 /* EJBindingTouchInput.m in Sources */,
+				292B09782025212C00F13567 /* EJBindingIAPTransaction.m in Sources */,
+				292B09792025212C00F13567 /* EJBindingIAPManager.m in Sources */,
+				292B097A2025212C00F13567 /* EJBindingIAPProduct.m in Sources */,
+				292B097B2025212C00F13567 /* EJBindingKeyInput.m in Sources */,
+				292B097C2025212C00F13567 /* EJBindingGameCenter.m in Sources */,
+				292B097D2025212C00F13567 /* EJBindingHttpRequest.m in Sources */,
+				292B097E2025212C00F13567 /* EJBindingWindowEvents.m in Sources */,
+				292B097F2025212C00F13567 /* EJAppViewController.m in Sources */,
+				292B09802025212C00F13567 /* EJTimer.m in Sources */,
+				292B09812025212C00F13567 /* EJJavaScriptView.m in Sources */,
+				292B09822025212C00F13567 /* EJBindingEventedBase.m in Sources */,
+				292B09832025212C00F13567 /* EJClassLoader.m in Sources */,
+				292B09842025212C00F13567 /* EJNonRetainingProxy.m in Sources */,
+				292B0994202A2ABB00F13567 /* ConvivaConfig.swift in Sources */,
+				292B09852025212C00F13567 /* EJConvert.m in Sources */,
+				292B09862025212C00F13567 /* EJBindingGlobalUtils.m in Sources */,
+				292B09872025212C00F13567 /* EJBindingBase.m in Sources */,
+				292B09882025212C00F13567 /* EJBindingVideo.m in Sources */,
+				292B096720251E5900F13567 /* AppDelegate.swift in Sources */,
+				292B096F2025211D00F13567 /* Constant.swift in Sources */,
+				292B09702025211D00F13567 /* FAVPlayer.swift in Sources */,
+				292B09712025211D00F13567 /* PlayerService.swift in Sources */,
+				292B09722025211D00F13567 /* PlayerInterface.swift in Sources */,
+				292B09732025211D00F13567 /* JSPlayerInterface.swift in Sources */,
+				292B09742025211D00F13567 /* PlayerEventDelegate.swift in Sources */,
+				292B0949202518F500F13567 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B09232025181300F13567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292B092E2025181300F13567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25E983CD1F97705300A8734F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25E983C11F97705300A8734F /* FAVPlayer */;
+			targetProxy = 25E983CC1F97705300A8734F /* PBXContainerItemProxy */;
+		};
+		292B08F7202517DC00F13567 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292B08DE202517DC00F13567 /* FAVPlayerDemo_iOS */;
+			targetProxy = 292B08F6202517DC00F13567 /* PBXContainerItemProxy */;
+		};
+		292B0902202517DC00F13567 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292B08DE202517DC00F13567 /* FAVPlayerDemo_iOS */;
+			targetProxy = 292B0901202517DC00F13567 /* PBXContainerItemProxy */;
+		};
+		292B09292025181300F13567 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292B09132025181300F13567 /* FAVPlayerDemo_tvOS */;
+			targetProxy = 292B09282025181300F13567 /* PBXContainerItemProxy */;
+		};
+		292B09342025181300F13567 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292B09132025181300F13567 /* FAVPlayerDemo_tvOS */;
+			targetProxy = 292B09332025181300F13567 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25E983B51F976FEC00A8734F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25E983B61F976FEC00A8734F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25E983D41F97705300A8734F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298AA7DF2024F10F001DEFF6 /* FAVPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Assets/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frequency.framework.FAVPlayer;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = FAVPlayer;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		25E983D51F97705300A8734F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298AA7DF2024F10F001DEFF6 /* FAVPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Assets/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frequency.framework.FAVPlayer;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = FAVPlayer;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		25E983D71F97705300A8734F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XL2GSHMUDQ;
+				INFOPLIST_FILE = Tests/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiborbodecs.Console-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		25E983D81F97705300A8734F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XL2GSHMUDQ;
+				INFOPLIST_FILE = Tests/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiborbodecs.Console-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		292B0908202517DC00F13567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Demo/iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FAVPlayerDemo_tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		292B0909202517DC00F13567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Demo/iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FAVPlayerDemo_tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		292B090B202517DC00F13567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = FAVPlayerDemo_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FAVPlayerDemo_iOS.app/FAVPlayerDemo_iOS";
+			};
+			name = Debug;
+		};
+		292B090C202517DC00F13567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = FAVPlayerDemo_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FAVPlayerDemo_iOS.app/FAVPlayerDemo_iOS";
+			};
+			name = Release;
+		};
+		292B090E202517DC00F13567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = FAVPlayerDemo_iOSUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FAVPlayerDemo_iOS;
+			};
+			name = Debug;
+		};
+		292B090F202517DC00F13567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = FAVPlayerDemo_iOSUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FAVPlayerDemo_iOS;
+			};
+			name = Release;
+		};
+		292B093A2025181300F13567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = TVAssets;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Demo/tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FAVPlayerDemo_tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		292B093B2025181300F13567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = TVAssets;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Demo/tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FAVPlayerDemo_tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		292B093D2025181300F13567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = FAVPlayerDemo_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FAVPlayerDemo_tvOS.app/FAVPlayerDemo_tvOS";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		292B093E2025181300F13567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = FAVPlayerDemo_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FAVPlayerDemo_tvOS.app/FAVPlayerDemo_tvOS";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		292B09402025181300F13567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = FAVPlayerDemo_tvOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-tvOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = FAVPlayerDemo_tvOS;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		292B09412025181300F13567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89Y7EFHU28;
+				INFOPLIST_FILE = FAVPlayerDemo_tvOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-tvOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = FAVPlayerDemo_tvOS;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25E9839D1F976FEB00A8734F /* Build configuration list for PBXProject "FAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25E983B51F976FEC00A8734F /* Debug */,
+				25E983B61F976FEC00A8734F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25E983D31F97705300A8734F /* Build configuration list for PBXNativeTarget "FAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25E983D41F97705300A8734F /* Debug */,
+				25E983D51F97705300A8734F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25E983D61F97705300A8734F /* Build configuration list for PBXNativeTarget "FAVPlayer-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25E983D71F97705300A8734F /* Debug */,
+				25E983D81F97705300A8734F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292B0907202517DC00F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292B0908202517DC00F13567 /* Debug */,
+				292B0909202517DC00F13567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292B090A202517DC00F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292B090B202517DC00F13567 /* Debug */,
+				292B090C202517DC00F13567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292B090D202517DC00F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292B090E202517DC00F13567 /* Debug */,
+				292B090F202517DC00F13567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292B09392025181300F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292B093A2025181300F13567 /* Debug */,
+				292B093B2025181300F13567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292B093C2025181300F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292B093D2025181300F13567 /* Debug */,
+				292B093E2025181300F13567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292B093F2025181300F13567 /* Build configuration list for PBXNativeTarget "FAVPlayerDemo_tvOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292B09402025181300F13567 /* Debug */,
+				292B09412025181300F13567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25E9839A1F976FEB00A8734F /* Project object */;
+}
