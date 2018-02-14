@@ -36,3 +36,9 @@ Present the AVPlayerViewController.
 self.present(avPlayerViewController, animated: true, completion: nil)
 ```
 
+## The Demo App
+
+Open the FAVPlayer.xcodeproj
+Insert the token and deviceId in the [Player constructor in the MainViewController](https://github.com/frequency/frequency-ios-sdk-public/blob/master/Sources/Demo/MainViewController.swift#L39)
+Launch the app on a device or simulator
+A video will play
