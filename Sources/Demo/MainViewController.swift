@@ -38,8 +38,8 @@ class MainViewController: UIViewController {
         
         playerVC?.player = FAVPlayer.init(
             apiUrl: "https://prd-freq.frequency.com",
-            token: "d3f20479-1d63-4d5d-a634-a02bee408473",
-            deviceId: "5828aad7-d813-d339")
+            token: "",
+            deviceId: "")
         
         playerVC?.view.frame = playerView.frame
         
