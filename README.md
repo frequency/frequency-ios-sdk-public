@@ -40,5 +40,11 @@ self.present(avPlayerViewController, animated: true, completion: nil)
 
 Open the FAVPlayer.xcodeproj
 Insert the token and deviceId in the [Player constructor in the MainViewController](https://github.com/frequency/frequency-ios-sdk-public/blob/master/Sources/Demo/MainViewController.swift#L39)
+
 Launch the app on a device or simulator
+
 A video will play
+
+Note: if you're not using htpps://prd-freq.frequency.com you will need to change the video ids and channel ids in
+[DemoConstants]
+(https://github.com/frequency/frequency-ios-sdk-public/blob/master/Sources/Demo/DemoConstants.swift)
