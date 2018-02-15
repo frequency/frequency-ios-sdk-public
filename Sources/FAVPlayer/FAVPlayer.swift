@@ -28,6 +28,12 @@ import AVKit
      @discussion        if the ad isn't skippable this callback will never be fired
      */
     func onAdSkippable()
+    
+    /*!
+     @method onAdEnded:
+     @abstract          onAdEnded event is fired when the playback as ended or it has been skipped.
+     */
+    func onAdEnded()
 }
 
 /**
@@ -158,6 +164,7 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
     }
     
     internal func load(mediaUrl: String) {
+        itemIsAd = false // reset the state
         
         print("loadWith " + mediaUrl)
         let item = AVPlayerItem.init(url: URL.init(string: mediaUrl)!)
@@ -228,7 +235,6 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
         adDelegate?.onAdSkippable()
     }
     
-    
     internal func onAd(title: String, duration: String, offset: String){
         itemIsAd = true
         adDelegate?.onAdReady(title: title, duration: Double.init(duration)!, skipOffset: Double.init(duration)!)
@@ -288,6 +294,9 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
     
     @objc func playerItemDidReachEnd(notification: NSNotification) {
         print("Video Finished")
+        if(itemIsAd){
+            adDelegate?.onAdEnded()
+        }
         itemIsAd = false
         jsDelegate?.onStateChange(playbackState: PlaybackState.ended)
     }

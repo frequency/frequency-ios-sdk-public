@@ -25,7 +25,6 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
     
     var events = [PlayerEvent: [String]]()
     var javascriptView : EJJavaScriptView?
-    var adDelegate : AdDelegate?
     
     init(player : JS2SwiftPlayerInterface) {
         isReady = false

@@ -9,15 +9,20 @@
 import UIKit
 import AVKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, AdDelegate{
     
     var playerVC : AVPlayerViewController?
     
     @IBOutlet weak var playerView: UIView!
+    @IBOutlet weak var skipButton: UIButton!
+    @IBOutlet weak var destroyButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initPlayer(videoId: PlayerConstants.videoIds[Int(arc4random_uniform(UInt32(PlayerConstants.videoIds.count)))])
+        
+        let id = PlayerConstants.videoIdsQA[Int(arc4random_uniform(UInt32(PlayerConstants.videoIdsQA.count)))]
+        initPlayer()
+        (playerVC?.player as! FAVPlayer).load(videoId: id)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(FAVPlayer.playerItemDidReachEnd(notification:)),
@@ -44,45 +49,26 @@ class MainViewController: UIViewController {
         playerVC?.view.frame = playerView.frame
         
         self.view.addSubview(playerVC!.view)
-    }
-    
-    func initPlayer(videoId: String){
-        initPlayer()
-        
-        (playerVC?.player as! FAVPlayer).load(videoId: videoId)
-    }
-    
-    func initPlayer(channelId: String){
-        initPlayer()
-        
-        (playerVC?.player as! FAVPlayer).load(channelId: channelId)
-    }
-    
-    func initPlayerNative(url: String){
-        playerVC = AVPlayerViewController()
-        
-        playerVC?.player = AVPlayer.init(url: URL.init(string: url)!)
-        
-        playerVC?.player?.playImmediately(atRate: 1)
-        
-        playerVC?.view.frame = playerView.frame
+        destroyButton.isEnabled = true
     }
     
     func destroyPlayer(){
         
-        (playerVC?.player as! FAVPlayer).destroy()
-        playerVC?.view.removeFromSuperview()
-        playerVC?.player = nil
-        playerVC = nil
+        if(playerVC != nil){
+            (playerVC?.player as! FAVPlayer).destroy()
+            playerVC?.view.removeFromSuperview()
+            playerVC?.player = nil
+            playerVC = nil
+        }
+        destroyButton.isEnabled = false
     }
     
     @IBAction func f1(_ sender: AnyObject) {
-        initPlayerNative(url: PlayerConstants.videoUrls[Int(arc4random_uniform(UInt32(PlayerConstants.videoUrls.count)))])
+    
     }
     
     @IBAction func f2(_ sender: AnyObject) {
         
-        initPlayer(videoId: PlayerConstants.videoIds[Int(arc4random_uniform(UInt32(PlayerConstants.videoIds.count)))])
     }
     
     @IBAction func f3(_ sender: AnyObject) {
@@ -90,32 +76,47 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func f4(_ sender: AnyObject) {
-        
         destroyPlayer()
     }
     
     @IBAction func playVideo(_ sender: AnyObject) {
-        let id = PlayerConstants.videoIds[Int(arc4random_uniform(UInt32(PlayerConstants.videoIds.count)))]
+        let id = PlayerConstants.videoIdsQA[Int(arc4random_uniform(UInt32(PlayerConstants.videoIdsQA.count)))]
         
         if(playerVC == nil){
-            initPlayer(videoId : id)
-        }else{
-            (playerVC?.player as! FAVPlayer).load(videoId: id)
+            initPlayer()
         }
+        (playerVC?.player as! FAVPlayer).load(videoId: id)
     }
     
     @IBAction func playChannel(_ sender: AnyObject) {
         let id = PlayerConstants.channelIds[Int(arc4random_uniform(UInt32(PlayerConstants.channelIds.count)))]
         
         if(playerVC == nil){
-            initPlayer(channelId : id)
-        }else{
-            (playerVC?.player as! FAVPlayer).load(channelId: id)
+            initPlayer()
         }
+        
+        (playerVC?.player as! FAVPlayer).load(channelId: id)
+    }
+    
+    @IBAction func skipAd(_ sender: AnyObject) {
+        (playerVC?.player as! FAVPlayer).skipAd()
     }
     
     @objc func playerItemDidReachEnd(notification: NSNotification) {
         print("Video Finished")
+    }
+    
+    func onAdReady(title: String, duration: Double, skipOffset: Double) {
+        print("Playing ad : " + title + " duration : " + String.init(duration) + " skippable after : " + String.init(skipOffset))
+        skipButton.isEnabled = false
+    }
+    
+    func onAdSkippable() {
+        skipButton.isEnabled = true
+    }
+    
+    func onAdEnded() {
+        skipButton.isEnabled = false
     }
 }
 
