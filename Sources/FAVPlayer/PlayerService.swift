@@ -141,9 +141,9 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
             """)
             
             _ = context?.evaluateScript("""
-                window.player.on('ad', (title, duration, offset) => {
-                    FAVPlayer.onAdWithTitleDurationOffset(title, duration, offset);
-                });
+                window.player.on('ad', (adObj) => {
+                   FAVPlayer.onAdWithTitleDurationOffset(adObj.adTitle, adObj.duration, adObj.skipoffset);
+               });
             """)
     }
     

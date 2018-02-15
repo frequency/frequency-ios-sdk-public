@@ -10,5 +10,5 @@ import Foundation
 
 struct PlayerConstants {
     static let apiURL = ""
-    static let playerURL = "https://static.frequency.com/player/4.0.0-alpha/playerEmbed.js"
+    static let playerURL = "https://static.frequency.com/player/4.0.0-beta/playerEmbed.js"
 }
