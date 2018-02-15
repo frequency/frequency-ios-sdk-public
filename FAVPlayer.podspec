@@ -31,7 +31,7 @@ self.present(avPlayerViewController, animated: true, completion: nil)
                      DESC
 
   s.homepage     = "https://www.frequency.com/"
-  s.license      = { :type => 'MIT' }
+  s.license      = { :type => 'BSD' }
   s.author             = { "clementperez" => "clement@frequency.com" }
   s.ios.deployment_target = '10.0'
   s.tvos.deployment_target = '10.0'
