@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "FAVPlayer"
   s.version      = "0.0.1"
-  s.summary      = "FAVPlayer is an AVPlayer that allow you to play Frequency's videos with just a videoId. FAVPlayer let you play frequency's video natively on iOS and tvOS with ads and analytics but without fuss."
+  s.summary      = "The FAVPlayer or Frequency AVPlayer is a iOS and tvOS native player which let you easily play Frequency's videos."
 
   s.description  = <<-DESC
             The FAVPlayer or Frequency AVPlayer is a iOS and tvOS native player which let you easily play Frequency's videos.
@@ -31,7 +31,7 @@ self.present(avPlayerViewController, animated: true, completion: nil)
                      DESC
 
   s.homepage     = "https://www.frequency.com/"
-  s.license      = 'MIT'
+  s.license      = { :type => 'MIT' }
   s.author             = { "clementperez" => "clement@frequency.com" }
   s.ios.deployment_target = '10.0'
   s.tvos.deployment_target = '10.0'
