@@ -1,0 +1,128 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/build/Release/FAVPlayer.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "EJAppViewController.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJAppViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingBase.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJBindingBase.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingEventedBase.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJBindingEventedBase.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingGameCenter.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJUtils/EJBindingGameCenter.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingGlobalUtils.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJBindingGlobalUtils.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingHttpRequest.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJUtils/EJBindingHttpRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingIAPManager.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJUtils/IAP/EJBindingIAPManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingIAPProduct.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJUtils/IAP/EJBindingIAPProduct.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingIAPTransaction.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJUtils/IAP/EJBindingIAPTransaction.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingKeyInput.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJUtils/EJBindingKeyInput.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingLocalStorage.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJUtils/EJBindingLocalStorage.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingTouchInput.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJUtils/EJBindingTouchInput.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingVideo.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJBindingVideo.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJBindingWindowEvents.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJUtils/EJBindingWindowEvents.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJClassLoader.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJClassLoader.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJConvert.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJConvert.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJJavaScriptView.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJJavaScriptView.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJNonRetainingProxy.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJNonRetainingProxy.h"
+        },
+        {
+          'type': 'file',
+          'name': "EJTimer.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Ejecta/EJTimer.h"
+        },
+        {
+          'type': 'file',
+          'name': "FAVPlayer.h",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "Prefix.pch",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/Prefix.pch"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/build/Release/FAVPlayer.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/build/FAVPlayer.build/Release/FAVPlayer.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -30,7 +30,7 @@ self.present(avPlayerViewController, animated: true, completion: nil)
 
                      DESC
 
-  s.homepage     = "https://www.frequency.com/"
+  s.homepage     = "https://confluence.frequency.com/display/HOME/iOS+SDK+2.0"
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE.txt" }
   s.author             = { "clementperez" => "clement@frequency.com" }
   s.ios.deployment_target = '10.0'
@@ -40,11 +40,12 @@ self.present(avPlayerViewController, animated: true, completion: nil)
   s.exclude_files = "Demo" , "Sources/Ejecta/*.{h,m}", "Sources/Ejecta/**/*.{h,m}"
   s.requires_arc = true
 
-  s.subspec 'no-arc' do |sp|
+  s.subspec 'noarc' do |sp|
      sp.source_files = "Sources/Ejecta/*.{h,m}", "Sources/Ejecta/**/*.{h,m}"
      sp.requires_arc = false
   end
 
   s.resources = "Assets/*.js"
+    s.documentation_url = "Docs/index.html"
 
 end

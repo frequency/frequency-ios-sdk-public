@@ -40,7 +40,6 @@ class MainViewController: UIViewController, AdDelegate{
     func initPlayer(){
         
         playerVC = AVPlayerViewController()
-        
         playerVC?.player = FAVPlayer.init(
             apiUrl: "https://prd-freq.frequency.com",
             token: "",
