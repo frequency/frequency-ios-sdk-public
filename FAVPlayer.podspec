@@ -30,7 +30,7 @@ self.present(avPlayerViewController, animated: true, completion: nil)
 
                      DESC
 
-  s.homepage     = "https://www.frequency.com/"
+  s.homepage     = "https://confluence.frequency.com/display/HOME/iOS+SDK+2.0"
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE.txt" }
   s.author             = { "clementperez" => "clement@frequency.com" }
   s.ios.deployment_target = '10.0'
