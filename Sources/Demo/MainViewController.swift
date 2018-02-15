@@ -20,7 +20,7 @@ class MainViewController: UIViewController, AdDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let id = PlayerConstants.videoIdsQA[Int(arc4random_uniform(UInt32(PlayerConstants.videoIdsQA.count)))]
+        let id = DemoConstants.videoIdsQA[Int(arc4random_uniform(UInt32(DemoConstants.videoIdsQA.count)))]
         initPlayer()
         (playerVC?.player as! FAVPlayer).load(videoId: id)
         
@@ -80,7 +80,7 @@ class MainViewController: UIViewController, AdDelegate{
     }
     
     @IBAction func playVideo(_ sender: AnyObject) {
-        let id = PlayerConstants.videoIdsQA[Int(arc4random_uniform(UInt32(PlayerConstants.videoIdsQA.count)))]
+        let id = DemoConstants.videoIdsQA[Int(arc4random_uniform(UInt32(DemoConstants.videoIdsQA.count)))]
         
         if(playerVC == nil){
             initPlayer()
@@ -89,7 +89,7 @@ class MainViewController: UIViewController, AdDelegate{
     }
     
     @IBAction func playChannel(_ sender: AnyObject) {
-        let id = PlayerConstants.channelIds[Int(arc4random_uniform(UInt32(PlayerConstants.channelIds.count)))]
+        let id = DemoConstants.channelIds[Int(arc4random_uniform(UInt32(DemoConstants.channelIds.count)))]
         
         if(playerVC == nil){
             initPlayer()
