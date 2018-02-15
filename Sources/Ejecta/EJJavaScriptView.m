@@ -124,7 +124,6 @@ void EJBlockFunctionFinalize(JSObjectRef object) {
     
     [touchDelegate release];
     [windowEventsDelegate release];
-    [deviceMotionDelegate release];
     
     [timers release];
     

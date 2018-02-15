@@ -186,6 +186,41 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
         jsDelegate?.onStateChange(playbackState: PlaybackState.paused)
     }
     
+    override public func seek(to date: Date){
+        if(!isLocked){
+            super.seek(to: date)
+        }
+    }
+    override public func seek(to date: Date, completionHandler: @escaping (Bool) -> Swift.Void){
+        if(!isLocked){
+            super.seek(to: date )
+        }
+    }
+    
+    override public func seek(to time: CMTime){
+        if(!isLocked){
+            super.seek(to : time)
+        }
+    }
+    
+    override public func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime){
+        if(!isLocked){
+            super.seek(to: time, toleranceBefore: toleranceBefore, toleranceAfter:toleranceAfter)
+        }
+    }
+    
+    override public func seek(to time: CMTime, completionHandler: @escaping (Bool) -> Swift.Void){
+        if(!isLocked){
+            super.seek(to: time, completionHandler: completionHandler)
+        }
+    }
+    
+    override public func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: @escaping (Bool) -> Swift.Void){
+        if(!isLocked){
+            super.seek(to: time, toleranceBefore: toleranceBefore, toleranceAfter: toleranceAfter, completionHandler: completionHandler)
+        }
+    }
+    
     internal func seekTo(progressInMs: Double) {
         print("seekTo = " + String(progressInMs))
         self.seek(to: CMTime.init(seconds: progressInMs/1000, preferredTimescale: 100))

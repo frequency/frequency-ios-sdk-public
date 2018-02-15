@@ -63,7 +63,6 @@
     
     NSObject<EJWindowEventsDelegate> *windowEventsDelegate;
     NSObject<EJTouchDelegate> *touchDelegate;
-    NSObject<EJDeviceMotionDelegate> *deviceMotionDelegate;
     
     NSOperationQueue *backgroundQueue;
     JSClassRef jsBlockFunctionClass;
@@ -83,7 +82,6 @@
 
 @property (nonatomic, retain) NSObject<EJWindowEventsDelegate> *windowEventsDelegate;
 @property (nonatomic, retain) NSObject<EJTouchDelegate> *touchDelegate;
-@property (nonatomic, retain) NSObject<EJDeviceMotionDelegate> *deviceMotionDelegate;
 
 @property (nonatomic, retain) NSOperationQueue *backgroundQueue;
 @property (nonatomic, retain) EJClassLoader *classLoader;
