@@ -1,0 +1,481 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 23,
+      "symbol": "AdDelegate.onAdReady(title:duration:skipOffset:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 23,
+      "symbol": "AdDelegate.onAdReady(title:duration:skipOffset:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 30,
+      "symbol": "AdDelegate.onAdSkippable()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 30,
+      "symbol": "AdDelegate.onAdSkippable()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 36,
+      "symbol": "AdDelegate.onAdEnded()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 36,
+      "symbol": "AdDelegate.onAdEnded()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 47,
+      "symbol": "FAVPlayer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 47,
+      "symbol": "FAVPlayer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 67,
+      "symbol": "FAVPlayer.init(apiUrl:token:deviceId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 67,
+      "symbol": "FAVPlayer.init(apiUrl:token:deviceId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 71,
+      "symbol": "FAVPlayer.init(apiUrl:token:deviceId:conviva:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 71,
+      "symbol": "FAVPlayer.init(apiUrl:token:deviceId:conviva:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 103,
+      "symbol": "FAVPlayer.setSession(authToken:deviceId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 103,
+      "symbol": "FAVPlayer.setSession(authToken:deviceId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 119,
+      "symbol": "FAVPlayer.addObserver(_:forKeyPath:options:context:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 119,
+      "symbol": "FAVPlayer.addObserver(_:forKeyPath:options:context:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 179,
+      "symbol": "FAVPlayer.play()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 179,
+      "symbol": "FAVPlayer.play()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 184,
+      "symbol": "FAVPlayer.pause()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 184,
+      "symbol": "FAVPlayer.pause()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 189,
+      "symbol": "FAVPlayer.seek(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 189,
+      "symbol": "FAVPlayer.seek(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 194,
+      "symbol": "FAVPlayer.seek(to:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 194,
+      "symbol": "FAVPlayer.seek(to:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 200,
+      "symbol": "FAVPlayer.seek(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 200,
+      "symbol": "FAVPlayer.seek(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 206,
+      "symbol": "FAVPlayer.seek(to:toleranceBefore:toleranceAfter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 206,
+      "symbol": "FAVPlayer.seek(to:toleranceBefore:toleranceAfter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 212,
+      "symbol": "FAVPlayer.seek(to:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 212,
+      "symbol": "FAVPlayer.seek(to:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 218,
+      "symbol": "FAVPlayer.seek(to:toleranceBefore:toleranceAfter:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 218,
+      "symbol": "FAVPlayer.seek(to:toleranceBefore:toleranceAfter:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 259,
+      "symbol": "FAVPlayer.skipAd()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 259,
+      "symbol": "FAVPlayer.skipAd()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 278,
+      "symbol": "FAVPlayer.observeValue(forKeyPath:of:change:context:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 278,
+      "symbol": "FAVPlayer.observeValue(forKeyPath:of:change:context:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 339,
+      "symbol": "FAVPlayer.addEventListener(eventName:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 339,
+      "symbol": "FAVPlayer.addEventListener(eventName:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 343,
+      "symbol": "FAVPlayer.removeEventListener(eventName:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 343,
+      "symbol": "FAVPlayer.removeEventListener(eventName:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 347,
+      "symbol": "FAVPlayer.load(videoId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 347,
+      "symbol": "FAVPlayer.load(videoId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 351,
+      "symbol": "FAVPlayer.load(channelId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 351,
+      "symbol": "FAVPlayer.load(channelId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 355,
+      "symbol": "FAVPlayer.setApiUrl(apiUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 355,
+      "symbol": "FAVPlayer.setApiUrl(apiUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 359,
+      "symbol": "FAVPlayer.setAdConfig(minBitrate:maxBitrate:maxResolution:minResolution:deliveryFormat:deliveryProtocol:format:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/FAVPlayer.swift",
+      "line": 359,
+      "symbol": "FAVPlayer.setAdConfig(minBitrate:maxBitrate:maxResolution:minResolution:deliveryFormat:deliveryProtocol:format:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 11,
+      "symbol": "JSPlayerInterface",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 11,
+      "symbol": "JSPlayerInterface",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 12,
+      "symbol": "JSPlayerInterface.addEventListener(eventName:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 12,
+      "symbol": "JSPlayerInterface.addEventListener(eventName:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 13,
+      "symbol": "JSPlayerInterface.removeEventListener(eventName:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 13,
+      "symbol": "JSPlayerInterface.removeEventListener(eventName:callback:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 14,
+      "symbol": "JSPlayerInterface.setSession(authToken:deviceId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 14,
+      "symbol": "JSPlayerInterface.setSession(authToken:deviceId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 15,
+      "symbol": "JSPlayerInterface.load(videoId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 15,
+      "symbol": "JSPlayerInterface.load(videoId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 16,
+      "symbol": "JSPlayerInterface.load(channelId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 16,
+      "symbol": "JSPlayerInterface.load(channelId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 17,
+      "symbol": "JSPlayerInterface.setApiUrl(apiUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 17,
+      "symbol": "JSPlayerInterface.setApiUrl(apiUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 18,
+      "symbol": "JSPlayerInterface.setAdConfig(minBitrate:maxBitrate:maxResolution:minResolution:deliveryFormat:deliveryProtocol:format:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 18,
+      "symbol": "JSPlayerInterface.setAdConfig(minBitrate:maxBitrate:maxResolution:minResolution:deliveryFormat:deliveryProtocol:format:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 19,
+      "symbol": "JSPlayerInterface.skipAd()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/FAVPlayer/protocols/JSPlayerInterface.swift",
+      "line": 19,
+      "symbol": "JSPlayerInterface.skipAd()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/utils/ConvivaConfig.swift",
+      "line": 11,
+      "symbol": "ConvivaConfig",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk/Sources/utils/ConvivaConfig.swift",
+      "line": 11,
+      "symbol": "ConvivaConfig",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/clementperez/Code/iOS/frequency-ios-favplayer-sdk"
+}

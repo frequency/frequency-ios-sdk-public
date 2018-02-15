@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "idiom" : "tv",
+      "filename" : "icon-favplayer-1280x768.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

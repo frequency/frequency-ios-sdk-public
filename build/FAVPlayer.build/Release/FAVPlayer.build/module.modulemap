@@ -1,0 +1,6 @@
+framework module FAVPlayer {
+  umbrella header "FAVPlayer.h"
+
+  export *
+  module * { export * }
+}
