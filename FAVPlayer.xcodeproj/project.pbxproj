@@ -10,6 +10,12 @@
 		25E983CB1F97705300A8734F /* FAVPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E983C21F97705300A8734F /* FAVPlayer.framework */; };
 		25E984901F9772E500A8734F /* ConsoleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9847E1F9772D300A8734F /* ConsoleTests.swift */; };
 		25E984931F977A9400A8734F /* FAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E984801F9772D300A8734F /* FAVPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2917379C2033BB9B00333BC1 /* Ejecta.js in Resources */ = {isa = PBXBuildFile; fileRef = 299B9BEE20224DA6000703C1 /* Ejecta.js */; };
+		2917379D2033BB9B00333BC1 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 299B9BEF20224DA6000703C1 /* index.js */; };
+		2917379E2033BBA200333BC1 /* Ejecta.js in Resources */ = {isa = PBXBuildFile; fileRef = 299B9BEE20224DA6000703C1 /* Ejecta.js */; };
+		2917379F2033BBA200333BC1 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 299B9BEF20224DA6000703C1 /* index.js */; };
+		291737A12035100600333BC1 /* DemoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291737A02035100600333BC1 /* DemoConstants.swift */; };
+		291737A22035100600333BC1 /* DemoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291737A02035100600333BC1 /* DemoConstants.swift */; };
 		292B08EC202517DC00F13567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292B08EB202517DC00F13567 /* Assets.xcassets */; };
 		292B09452025183F00F13567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292B09442025183F00F13567 /* Main.storyboard */; };
 		292B0948202518F500F13567 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B0947202518F500F13567 /* MainViewController.swift */; };
@@ -169,6 +175,7 @@
 		25E983CA1F97705300A8734F /* FAVPlayer-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FAVPlayer-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E9847E1F9772D300A8734F /* ConsoleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleTests.swift; sourceTree = "<group>"; };
 		25E984801F9772D300A8734F /* FAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAVPlayer.h; sourceTree = "<group>"; };
+		291737A02035100600333BC1 /* DemoConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoConstants.swift; sourceTree = "<group>"; };
 		292B08DF202517DC00F13567 /* FAVPlayerDemo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAVPlayerDemo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		292B08EB202517DC00F13567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		292B08F0202517DC00F13567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -393,6 +400,7 @@
 		292B08D8202516A500F13567 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				291737A02035100600333BC1 /* DemoConstants.swift */,
 				292B0947202518F500F13567 /* MainViewController.swift */,
 				292B096520251E5900F13567 /* AppDelegate.swift */,
 				292B08EB202517DC00F13567 /* Assets.xcassets */,
@@ -783,6 +791,8 @@
 			files = (
 				292B09452025183F00F13567 /* Main.storyboard in Resources */,
 				292B08EC202517DC00F13567 /* Assets.xcassets in Resources */,
+				2917379C2033BB9B00333BC1 /* Ejecta.js in Resources */,
+				2917379D2033BB9B00333BC1 /* index.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,6 +816,8 @@
 			files = (
 				292B098D202529C000F13567 /* Main.storyboard in Resources */,
 				292B096E20251FA000F13567 /* Assets.xcassets in Resources */,
+				2917379E2033BBA200333BC1 /* Ejecta.js in Resources */,
+				2917379F2033BBA200333BC1 /* index.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,6 +891,7 @@
 				292B0963202519C900F13567 /* JSPlayerInterface.swift in Sources */,
 				292B0964202519C900F13567 /* PlayerEventDelegate.swift in Sources */,
 				292B0948202518F500F13567 /* MainViewController.swift in Sources */,
+				291737A12035100600333BC1 /* DemoConstants.swift in Sources */,
 				292B094B2025193700F13567 /* EJAppViewController.m in Sources */,
 				292B094C2025193700F13567 /* EJTimer.m in Sources */,
 				292B094D2025193700F13567 /* EJJavaScriptView.m in Sources */,
@@ -928,6 +941,7 @@
 				292B097B2025212C00F13567 /* EJBindingKeyInput.m in Sources */,
 				292B097C2025212C00F13567 /* EJBindingGameCenter.m in Sources */,
 				292B097D2025212C00F13567 /* EJBindingHttpRequest.m in Sources */,
+				291737A22035100600333BC1 /* DemoConstants.swift in Sources */,
 				292B097E2025212C00F13567 /* EJBindingWindowEvents.m in Sources */,
 				292B097F2025212C00F13567 /* EJAppViewController.m in Sources */,
 				292B09802025212C00F13567 /* EJTimer.m in Sources */,

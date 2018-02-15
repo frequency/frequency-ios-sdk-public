@@ -25,7 +25,6 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
     
     var events = [PlayerEvent: [String]]()
     var javascriptView : EJJavaScriptView?
-    var adDelegate : AdDelegate?
     
     init(player : JS2SwiftPlayerInterface) {
         isReady = false
@@ -107,12 +106,29 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
                 }
             """
         
+            let adsConfigStr = """
+                    ['Ads',
+                    {
+                        url: 'https://qa-freq-ad-decision.frequency.com',
+                        minBitrate: 100,
+                        maxBitrate: 5000,
+                        maxResolution: '720p',
+                        minResolution: '720p',
+                        deliveryFormat: 'progressive',
+                        deliveryProtocol: 'https',
+                        format: 'video/mp4'
+                    }]
+            """
+        
             let playerStr = """
                 window.player = new Frequency.Player({
                     \(apiConfigStr),
                     \(sessionConfigStr),
                     \(eventConfigStr),
-                    \(convivaConfig == nil ? "" : "," + convivaConfigStr)
+                    plugins: [
+                        \(adsConfigStr)
+                        \(convivaConfig == nil ? "" : "," + convivaConfigStr)
+                    ]
                 })
             """
             print(playerStr)

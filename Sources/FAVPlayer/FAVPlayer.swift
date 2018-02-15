@@ -28,6 +28,12 @@ import AVKit
      @discussion        if the ad isn't skippable this callback will never be fired
      */
     func onAdSkippable()
+    
+    /*!
+     @method onAdEnded:
+     @abstract          onAdEnded event is fired when the playback as ended or it has been skipped.
+     */
+    func onAdEnded()
 }
 
 /**
@@ -158,6 +164,7 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
     }
     
     internal func load(mediaUrl: String) {
+        itemIsAd = false // reset the state
         
         print("loadWith " + mediaUrl)
         let item = AVPlayerItem.init(url: URL.init(string: mediaUrl)!)
@@ -177,6 +184,41 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
     override public func pause() {
         super.pause()
         jsDelegate?.onStateChange(playbackState: PlaybackState.paused)
+    }
+    
+    override public func seek(to date: Date){
+        if(!isLocked){
+            super.seek(to: date)
+        }
+    }
+    override public func seek(to date: Date, completionHandler: @escaping (Bool) -> Swift.Void){
+        if(!isLocked){
+            super.seek(to: date )
+        }
+    }
+    
+    override public func seek(to time: CMTime){
+        if(!isLocked){
+            super.seek(to : time)
+        }
+    }
+    
+    override public func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime){
+        if(!isLocked){
+            super.seek(to: time, toleranceBefore: toleranceBefore, toleranceAfter:toleranceAfter)
+        }
+    }
+    
+    override public func seek(to time: CMTime, completionHandler: @escaping (Bool) -> Swift.Void){
+        if(!isLocked){
+            super.seek(to: time, completionHandler: completionHandler)
+        }
+    }
+    
+    override public func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: @escaping (Bool) -> Swift.Void){
+        if(!isLocked){
+            super.seek(to: time, toleranceBefore: toleranceBefore, toleranceAfter: toleranceAfter, completionHandler: completionHandler)
+        }
     }
     
     internal func seekTo(progressInMs: Double) {
@@ -227,7 +269,6 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
         isLocked = false
         adDelegate?.onAdSkippable()
     }
-    
     
     internal func onAd(title: String, duration: String, offset: String){
         itemIsAd = true
@@ -288,6 +329,9 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
     
     @objc func playerItemDidReachEnd(notification: NSNotification) {
         print("Video Finished")
+        if(itemIsAd){
+            adDelegate?.onAdEnded()
+        }
         itemIsAd = false
         jsDelegate?.onStateChange(playbackState: PlaybackState.ended)
     }
