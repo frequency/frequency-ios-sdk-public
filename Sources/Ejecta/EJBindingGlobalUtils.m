@@ -43,24 +43,6 @@ EJ_BIND_FUNCTION(log, ctx, argc, argv ) {
 	return NULL;
 }
 
-EJ_BIND_FUNCTION(load, ctx, argc, argv ) {
-	if( argc < 1 ) return NULL;
-	
-	NSObject<UIApplicationDelegate> *app = UIApplication.sharedApplication.delegate;
-	SEL loadViewControllerWithScriptAtPath = sel_registerName("loadViewControllerWithScriptAtPath:");
-	if( [app respondsToSelector:loadViewControllerWithScriptAtPath] ) {
-		// Queue up the loading till the next frame; the script view may be in the
-		// midst of a timer update
-		[app performSelectorOnMainThread:loadViewControllerWithScriptAtPath
-			withObject:JSValueToNSString(ctx, argv[0]) waitUntilDone:NO];
-	}
-	else {
-		NSLog(@"Error: Current UIApplicationDelegate does not support loadViewControllerWithScriptAtPath.");
-	}
-	
-	return NULL;
-}
-
 EJ_BIND_FUNCTION(include, ctx, argc, argv ) {
 	if( argc < 1 ) { return NULL; }
 
@@ -79,35 +61,6 @@ EJ_BIND_FUNCTION(requireModule, ctx, argc, argv ) {
 	if( argc < 3 ) { return NULL; }
 	
 	return [scriptView loadModuleWithId:JSValueToNSString(ctx, argv[0]) module:argv[1] exports:argv[2]];
-}
-
-EJ_BIND_FUNCTION(openURL, ctx, argc, argv ) {
-	if( argc < 1 ) { return NULL; }
-	
-	NSString *url = JSValueToNSString( ctx, argv[0] );
-	if( argc == 2 ) {
-		NSString *confirm = JSValueToNSString( ctx, argv[1] );
-		UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Open Browser?"
-			message:confirm preferredStyle:UIAlertControllerStyleAlert];
-		
-		UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-			handler:^(UIAlertAction * action) {
-				[UIApplication.sharedApplication openURL:[NSURL URLWithString:url]
-					options:@{} completionHandler:^(BOOL success) {}];
-			}];
-		UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel
-			handler:^(UIAlertAction * action) {}];
-		
-		[alert addAction:ok];
-		[alert addAction:cancel];
-		
-		[self.scriptView.window.rootViewController presentViewController:alert animated:YES completion:nil];
-	}
-	else {
-		[UIApplication.sharedApplication openURL:[NSURL URLWithString:url]
-					options:@{} completionHandler:^(BOOL success) {}];
-	}
-	return NULL;
 }
 
 EJ_BIND_FUNCTION(getText, ctx, argc, argv) {
@@ -199,21 +152,6 @@ EJ_BIND_GET(appVersion, ctx ) {
 	return NSStringToJSValue( ctx, EJECTA_VERSION );
 }
 
-EJ_BIND_GET(orientation, ctx ) {
-	int angle = 0;
-	
-	#if !TARGET_OS_TV
-		switch( UIApplication.sharedApplication.statusBarOrientation ) {
-			case UIDeviceOrientationPortrait: angle = 0; break;
-			case UIInterfaceOrientationLandscapeLeft: angle = -90; break;
-			case UIInterfaceOrientationLandscapeRight: angle = 90; break;
-			case UIInterfaceOrientationPortraitUpsideDown: angle = 180; break;
-			default: angle = 0; break;
-		}
-	#endif
-	return JSValueMakeNumber(ctx, angle);
-}
-
 EJ_BIND_GET(onLine, ctx) {
 	struct sockaddr_in zeroAddress;
 	bzero(&zeroAddress, sizeof(zeroAddress));
@@ -248,14 +186,6 @@ EJ_BIND_GET(onLine, ctx) {
 	}
 	
 	return JSValueMakeBoolean(ctx, false);
-}
-
-EJ_BIND_GET(allowSleepMode, ctx) {
-	return JSValueMakeBoolean(ctx, !UIApplication.sharedApplication.idleTimerDisabled);
-}
-
-EJ_BIND_SET(allowSleepMode, ctx, value) {
-	UIApplication.sharedApplication.idleTimerDisabled = !JSValueToBoolean(ctx, value);
 }
 
 EJ_BIND_GET(otherAudioPlaying, ctx) {
