@@ -46,6 +46,6 @@ self.present(avPlayerViewController, animated: true, completion: nil)
   end
 
   s.resources = "Assets/*.js"
-    s.documentation_url = "Docs/index.html"
+    s.documentation_url = "https://confluence.frequency.com/display/HOME/iOS+SDK+3.1.0"
 
 end
