@@ -77,6 +77,12 @@
 		292B0992202A2ABB00F13567 /* ConvivaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B0991202A2ABB00F13567 /* ConvivaConfig.swift */; };
 		292B0993202A2ABB00F13567 /* ConvivaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B0991202A2ABB00F13567 /* ConvivaConfig.swift */; };
 		292B0994202A2ABB00F13567 /* ConvivaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B0991202A2ABB00F13567 /* ConvivaConfig.swift */; };
+		2955CA2B2045D1C900EE7AB9 /* AdsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955CA2A2045D1C900EE7AB9 /* AdsConfig.swift */; };
+		2955CA2C2045D1C900EE7AB9 /* AdsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955CA2A2045D1C900EE7AB9 /* AdsConfig.swift */; };
+		2955CA2D2045D1C900EE7AB9 /* AdsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955CA2A2045D1C900EE7AB9 /* AdsConfig.swift */; };
+		2955CA2E2045D1C900EE7AB9 /* AdsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955CA2A2045D1C900EE7AB9 /* AdsConfig.swift */; };
+		2955CA2F2045D1C900EE7AB9 /* AdsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955CA2A2045D1C900EE7AB9 /* AdsConfig.swift */; };
+		2955CA302045D1C900EE7AB9 /* AdsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955CA2A2045D1C900EE7AB9 /* AdsConfig.swift */; };
 		297F71F6203B566500D92811 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B5920224D71000703C1 /* Constant.swift */; };
 		297F71F7203B566500D92811 /* FAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8C20224D72000703C1 /* FAVPlayer.swift */; };
 		297F71F8203B566500D92811 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B9B8B20224D72000703C1 /* PlayerService.swift */; };
@@ -215,6 +221,7 @@
 		292B098A202521B700F13567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		292B098B202521FF00F13567 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
 		292B0991202A2ABB00F13567 /* ConvivaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvivaConfig.swift; sourceTree = "<group>"; };
+		2955CA2A2045D1C900EE7AB9 /* AdsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsConfig.swift; sourceTree = "<group>"; };
 		297F7216203BA0CC00D92811 /* FAVPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAVPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		297F7218203BA0CC00D92811 /* FAVPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAVPlayerTests.swift; sourceTree = "<group>"; };
 		297F721A203BA0CC00D92811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -456,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				292B0991202A2ABB00F13567 /* ConvivaConfig.swift */,
+				2955CA2A2045D1C900EE7AB9 /* AdsConfig.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -761,6 +769,7 @@
 					};
 					292B09262025181300F13567 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 292B09132025181300F13567;
 					};
@@ -891,6 +900,7 @@
 				299B9BC420224D73000703C1 /* EJBindingEventedBase.m in Sources */,
 				299B9BBF20224D73000703C1 /* EJAppViewController.m in Sources */,
 				299B9BD020224D73000703C1 /* EJBindingIAPTransaction.m in Sources */,
+				2955CA2B2045D1C900EE7AB9 /* AdsConfig.swift in Sources */,
 				299B9BE620224D73000703C1 /* EJBindingVideo.m in Sources */,
 				299B9BDE20224D73000703C1 /* EJConvert.m in Sources */,
 				299B9BCE20224D73000703C1 /* EJBindingTouchInput.m in Sources */,
@@ -933,6 +943,7 @@
 				292B09582025193700F13567 /* EJBindingWindowEvents.m in Sources */,
 				292B09592025193700F13567 /* EJClassLoader.m in Sources */,
 				292B095A2025193700F13567 /* EJConvert.m in Sources */,
+				2955CA2D2045D1C900EE7AB9 /* AdsConfig.swift in Sources */,
 				292B095B2025193700F13567 /* EJBindingGlobalUtils.m in Sources */,
 				292B095C2025193700F13567 /* EJBindingBase.m in Sources */,
 				292B095D2025193700F13567 /* EJBindingVideo.m in Sources */,
@@ -950,6 +961,7 @@
 				297F71FC203B568F00D92811 /* EJBindingIAPManager.m in Sources */,
 				297F71FD203B568F00D92811 /* EJBindingIAPProduct.m in Sources */,
 				297F71FE203B568F00D92811 /* EJBindingKeyInput.m in Sources */,
+				2955CA2E2045D1C900EE7AB9 /* AdsConfig.swift in Sources */,
 				297F71FF203B568F00D92811 /* EJBindingGameCenter.m in Sources */,
 				297F7200203B568F00D92811 /* EJBindingHttpRequest.m in Sources */,
 				297F7201203B568F00D92811 /* EJBindingWindowEvents.m in Sources */,
@@ -1005,6 +1017,7 @@
 				292B096F2025211D00F13567 /* Constant.swift in Sources */,
 				292B09702025211D00F13567 /* FAVPlayer.swift in Sources */,
 				292B09712025211D00F13567 /* PlayerService.swift in Sources */,
+				2955CA2F2045D1C900EE7AB9 /* AdsConfig.swift in Sources */,
 				292B09722025211D00F13567 /* PlayerInterface.swift in Sources */,
 				292B09732025211D00F13567 /* JSPlayerInterface.swift in Sources */,
 				292B09742025211D00F13567 /* PlayerEventDelegate.swift in Sources */,
@@ -1016,6 +1029,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2955CA302045D1C900EE7AB9 /* AdsConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,6 +1054,7 @@
 				29EF1206203CE8FA009E814E /* PlayerInterface.swift in Sources */,
 				29EF1207203CE8FA009E814E /* JSPlayerInterface.swift in Sources */,
 				29EF1208203CE8FA009E814E /* PlayerEventDelegate.swift in Sources */,
+				2955CA2C2045D1C900EE7AB9 /* AdsConfig.swift in Sources */,
 				29B2F1F5203BB0E4009AA60D /* PlayerServiceTests.swift in Sources */,
 				297F7219203BA0CC00D92811 /* FAVPlayerTests.swift in Sources */,
 			);
@@ -1398,6 +1413,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89Y7EFHU28;
 				INFOPLIST_FILE = FAVPlayerDemo_tvOSTests/Info.plist;
@@ -1405,6 +1421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "frequency.FAVPlayerDemo-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FAVPlayerDemo_tvOS.app/FAVPlayerDemo_tvOS";
@@ -1417,6 +1434,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89Y7EFHU28;
 				INFOPLIST_FILE = FAVPlayerDemo_tvOSTests/Info.plist;

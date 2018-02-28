@@ -41,7 +41,7 @@ import AVKit
  */
 @objc protocol PlayerInterface : JSPlayerInterface {
     init(apiUrl: String, token: String, deviceId: String)
-    init(apiUrl: String, token: String, deviceId: String, conviva: ConvivaConfig?)
+    init(apiUrl: String, token: String, deviceId: String, conviva: ConvivaConfig?, adsConfig: AdsConfig?)
 }
 
 public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface{
@@ -65,10 +65,10 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
     }
     
     required public convenience init(apiUrl: String, token: String, deviceId: String){
-        self.init(apiUrl: apiUrl, token: token, deviceId: deviceId, conviva: nil)
+        self.init(apiUrl: apiUrl, token: token, deviceId: deviceId, conviva: nil, adsConfig: nil)
     }
     
-    required public init(apiUrl: String, token: String,deviceId: String, conviva: ConvivaConfig?){
+    required public init(apiUrl: String, token: String,deviceId: String, conviva: ConvivaConfig?, adsConfig: AdsConfig?){
         playerItemContext = UnsafeMutablePointer.init(bitPattern: 32)
         super.init()
         self.actionAtItemEnd = AVPlayerActionAtItemEnd.pause
@@ -80,6 +80,7 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
             authToken: token,
             deviceId: deviceId,
             convivaConfig: conviva,
+            adsConfig: adsConfig,
             player: self)
         
         jsDelegate = playerServiceForDestroy
@@ -354,10 +355,6 @@ public class FAVPlayer : AVQueuePlayer, JS2SwiftPlayerInterface, PlayerInterface
     
     public func setApiUrl(apiUrl: String) {
         self.javascriptService?.setApiUrl(apiUrl: apiUrl)
-    }
-    
-    public func setAdConfig(minBitrate: String, maxBitrate: String, maxResolution: String, minResolution: String, deliveryFormat: String, deliveryProtocol: String, format: String) {
-        self.javascriptService?.setAdConfig(minBitrate: minBitrate, maxBitrate: maxBitrate, maxResolution: maxResolution, minResolution: minResolution, deliveryFormat: deliveryFormat, deliveryProtocol: deliveryProtocol, format: format)
     }
     
     internal func add(eventListener: String, callback: String) {

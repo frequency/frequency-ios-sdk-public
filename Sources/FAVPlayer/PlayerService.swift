@@ -75,10 +75,10 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
     }
     
     convenience init(baseUrl: String, authToken: String, deviceId: String, player: JS2SwiftPlayerInterface){
-        self.init(baseUrl: baseUrl, authToken: authToken, deviceId: deviceId, convivaConfig: nil, player: player)
+        self.init(baseUrl: baseUrl, authToken: authToken, deviceId: deviceId, convivaConfig: nil, adsConfig : nil, player: player)
     }
     
-    convenience init(baseUrl: String, authToken: String, deviceId: String, convivaConfig : ConvivaConfig?, player: JS2SwiftPlayerInterface){
+    convenience init(baseUrl: String, authToken: String, deviceId: String, convivaConfig : ConvivaConfig? = nil, adsConfig : AdsConfig? = nil, player: JS2SwiftPlayerInterface){
         self.init(player: player)
         
             let context = JSContext.init(jsGlobalContextRef: self.javascriptView?.jsGlobalContext)
@@ -86,15 +86,18 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
             let apiConfigStr = """
                 api_url: '\(baseUrl)'
                 """
+        
             let eventConfigStr = """
                 events: {}
                 """
+        
             let sessionConfigStr = """
                 session: {
                 'x-frequency-auth': '\(authToken)',
                 'x-frequency-deviceid': '\(deviceId)'
                 }
                 """
+        
             let convivaConfigStr = """
                 conviva: {
                     customer_key: '\(convivaConfig?.customerKey ?? "")',
@@ -109,14 +112,14 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
             let adsConfigStr = """
                     ['Ads',
                     {
-                        url: 'https://qa-freq-ad-decision.frequency.com',
-                        minBitrate: 100,
-                        maxBitrate: 5000,
-                        maxResolution: '720p',
-                        minResolution: '720p',
-                        deliveryFormat: 'progressive',
-                        deliveryProtocol: 'https',
-                        format: 'video/mp4'
+                        url: '\(adsConfig?.url ?? "")',
+                        minBitrate: '\(adsConfig?.minBitrate ?? PlayerConstants.adsMinBitrate)',
+                        maxBitrate: '\(adsConfig?.maxBitrate ?? PlayerConstants.adsMaxBitrate)',
+                        maxResolution: '\(adsConfig?.maxResolution ?? "")',
+                        minResolution: '\(adsConfig?.minResolution ?? "")',
+                        deliveryFormat: '\(adsConfig?.deliveryFormat ?? "")',
+                        deliveryProtocol: '\(adsConfig?.deliveryProtocol ?? "")',
+                        format: '\(adsConfig?.format ?? "")'
                     }]
             """
         
@@ -126,8 +129,8 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
                     \(sessionConfigStr),
                     \(eventConfigStr),
                     plugins: [
-                        \(adsConfigStr)
-                        \(convivaConfig == nil ? "" : "," + convivaConfigStr)
+                        \(adsConfig == nil ? "" : adsConfigStr)
+                        \(convivaConfig == nil ? "" : (adsConfig == nil ? "" : ",") + convivaConfigStr)
                     ]
                 })
             """
@@ -241,10 +244,6 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
     func setApiUrl(apiUrl : String){
         
         _ = self.evaluateScript(script: "player.setApi(" + apiUrl + ")")
-    }
-    
-    func setAdConfig(minBitrate: String, maxBitrate: String, maxResolution: String,minResolution: String,deliveryFormat: String, deliveryProtocol: String, format: String){
-        
     }
     
     func setSession(authToken: String, deviceId : String){
