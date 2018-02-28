@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FAVPlayer"
-  s.version      = "3.1.0"
+  s.version      = "3.1.1"
   s.summary      = "The FAVPlayer or Frequency AVPlayer is a iOS and tvOS native player which let you easily play Frequency's videos."
 
   s.description  = <<-DESC
@@ -46,6 +46,6 @@ self.present(avPlayerViewController, animated: true, completion: nil)
   end
 
   s.resources = "Assets/*.js"
-    s.documentation_url = "Docs/index.html"
+    s.documentation_url = "https://confluence.frequency.com/display/HOME/iOS+SDK+3.1.0"
 
 end
