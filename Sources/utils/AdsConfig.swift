@@ -8,24 +8,24 @@
 
 import Foundation
 
-public class AdsConfig : NSObject {
+@objc public class AdsConfig : NSObject {
     
-    enum Environment : String{
+    public enum Environment : String{
         case QA = "qa"
         case Prod = "prd"
     }
     
-    var environment: Environment
-    var url: String
-    var minBitrate: Int
-    var maxBitrate: Int
-    var maxResolution: String
-    var minResolution: String
-    var deliveryFormat: String
-    var deliveryProtocol: String
-    var format: String
+    public var environment: Environment
+    public var url: String
+    public var minBitrate: Int
+    public var maxBitrate: Int
+    public var maxResolution: String
+    public var minResolution: String
+    public var deliveryFormat: String
+    public var deliveryProtocol: String
+    public var format: String
     
-    init(environment: AdsConfig.Environment,
+    public init(environment: AdsConfig.Environment,
          minBitrate: Int? = PlayerConstants.adsMinBitrate,
          maxBitrate: Int? = PlayerConstants.adsMaxBitrate,
          maxResolution: String? = PlayerConstants.adsMaxResolution,

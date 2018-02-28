@@ -8,18 +8,18 @@
 
 import Foundation
 
-struct PlayerConstants {
+public struct PlayerConstants {
     static let apiURL = "https://prd-freq.frequency.com"
     static let playerURL = "https://static.frequency.com/player/3.1.0/playerEmbed.js"
     
-    static let adsPrdDecisioningUrl = "https://prd-freq-ad-eu.frequency.com"
-    static let adsQaDecisioningUrl = "https://qa-freq-ad-decision.frequency.com"
-    static let adsMinBitrate = 100
-    static let adsMaxBitrate = 5000
-    static let adsMaxResolution = "720p"
-    static let adsMinResolution = "720p"
-    static let adsDeliveryFormat = "progressive"
-    static let adsDeliveryProtocol = "https"
-    static let adsFormat = "video/mp4"
+    public static let adsPrdDecisioningUrl = "https://prd-freq-ad-eu.frequency.com"
+    public static let adsQaDecisioningUrl = "https://qa-freq-ad-decision.frequency.com"
+    public static let adsMinBitrate = 100
+    public static let adsMaxBitrate = 5000
+    public static let adsMaxResolution = "720p"
+    public static let adsMinResolution = "720p"
+    public static let adsDeliveryFormat = "progressive"
+    public static let adsDeliveryProtocol = "https"
+    public static let adsFormat = "video/mp4"
     
 }
