@@ -12,17 +12,47 @@
 		<key>FAVPlayerDemo_iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>FAVPlayerDemo_tvOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+		<key>FAVPlayerTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>25E983C11F97705300A8734F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>25E983C91F97705300A8734F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>292B08DE202517DC00F13567</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>292B08F4202517DC00F13567</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>292B08FF202517DC00F13567</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>297F7215203BA0CC00D92811</key>
 		<dict>
 			<key>primary</key>
 			<true/>

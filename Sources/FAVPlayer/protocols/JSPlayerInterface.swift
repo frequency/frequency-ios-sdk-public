@@ -15,6 +15,5 @@ import Foundation
     func load(videoId: String)
     func load(channelId: String)
     func setApiUrl(apiUrl : String)
-    func setAdConfig(minBitrate: String, maxBitrate: String, maxResolution: String,minResolution: String,deliveryFormat: String, deliveryProtocol: String, format: String)
     func skipAd()
 }
