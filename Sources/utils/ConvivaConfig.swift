@@ -13,7 +13,7 @@ public class ConvivaConfig: NSObject {
     var gatewayUrl : String = ""
     var tags : [String]
     
-    init(customerKey: String, gatewayUrl: String, tags: [String]){
+    @objc public init(customerKey: String, gatewayUrl: String, tags: [String]){
         self.customerKey = customerKey
         self.gatewayUrl = gatewayUrl
         self.tags = tags

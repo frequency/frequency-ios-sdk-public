@@ -10,9 +10,10 @@ import Foundation
 
 public class AdsConfig : NSObject {
     
-    enum Environment : String{
-        case QA = "qa"
-        case Prod = "prd"
+
+    @objc public enum Environment : Int{
+        case QA
+        case Prod
     }
     
     var environment: Environment
@@ -25,14 +26,31 @@ public class AdsConfig : NSObject {
     var deliveryProtocol: String
     var format: String
     
-    init(environment: AdsConfig.Environment,
-         minBitrate: Int? = PlayerConstants.adsMinBitrate,
-         maxBitrate: Int? = PlayerConstants.adsMaxBitrate,
+
+    @objc public override init() {
+        environment = Environment.Prod
+        url = ""
+        minBitrate = 0
+        maxBitrate = 0
+        maxResolution = ""
+        minResolution = ""
+        deliveryFormat = ""
+        deliveryProtocol = ""
+        format = ""
+        
+        super.init()
+    }
+    
+    @objc public convenience init(environment: AdsConfig.Environment,
+         minBitrate: Int,
+         maxBitrate: Int,
          maxResolution: String? = PlayerConstants.adsMaxResolution,
          minResolution: String? = PlayerConstants.adsMinResolution,
          deliveryFormat: String? = PlayerConstants.adsDeliveryFormat,
          deliveryProtocol: String? = PlayerConstants.adsDeliveryProtocol,
          format: String? = PlayerConstants.adsFormat) {
+        
+        self.init()
         
         self.environment = environment
         self.url = ""
@@ -42,18 +60,14 @@ public class AdsConfig : NSObject {
             url = PlayerConstants.adsQaDecisioningUrl
         case Environment.Prod :
             url = PlayerConstants.adsPrdDecisioningUrl
-        default:
-            url = PlayerConstants.adsPrdDecisioningUrl
         }
         
-        self.minBitrate = minBitrate!
-        self.maxBitrate = maxBitrate!
+        self.minBitrate = minBitrate
+        self.maxBitrate = maxBitrate
         self.maxResolution = maxResolution!
         self.minResolution = minResolution!
         self.deliveryFormat = deliveryFormat!
         self.deliveryProtocol = deliveryProtocol!
         self.format = format!
-        
-        super.init()
     }
 }

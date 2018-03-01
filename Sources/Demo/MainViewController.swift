@@ -39,7 +39,7 @@ class MainViewController: UIViewController, AdDelegate{
     
     func initPlayer(){
         
-        let adsConfig = AdsConfig.init(environment: AdsConfig.Environment.Prod)
+        let adsConfig = AdsConfig.init(environment: AdsConfig.Environment.QA, minBitrate: 100, maxBitrate: 200)
         
         playerVC = AVPlayerViewController()
         playerVC?.player = FAVPlayer.init(apiUrl: "https://prd-lgi-api.frequency.com",
