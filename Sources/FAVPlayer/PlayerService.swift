@@ -99,14 +99,15 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
                 """
         
             let convivaConfigStr = """
-                conviva: {
+                ['Conviva',
+                {
                     customer_key: '\(convivaConfig?.customerKey ?? "")',
                     gateway_url: '\(convivaConfig?.gatewayUrl ?? "")',
                     tags: {
                         tag1: "\(convivaConfig?.tags[0] ?? "")",
                         tag2: "\(convivaConfig?.tags[1] ?? "")"
                     }
-                }
+                 }]
             """
         
             let adsConfigStr = """
