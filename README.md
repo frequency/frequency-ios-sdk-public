@@ -19,7 +19,7 @@ Then in your terminal, at the root of your project, `pod update`
 
 First you'll have to authenticate, then create the player and pass it the token and deviceId.
 ```
-var f = FAVPlayer.init(apiUrl: "https://prd-freq.frequency.com", token: "TOKEN_ID", deviceId: "DEVICE_ID")
+var favPlayer = FAVPlayer.init(apiUrl: "https://prd-freq.frequency.com", token: "TOKEN_ID", deviceId: "DEVICE_ID")
 ```
 Create an avPlayerViewController and assign the newly created favPlayer as its player.
 ```
@@ -34,6 +34,23 @@ favPlayer.load(videoId: "VIDEO_ID")
 Present the AVPlayerViewController.
 ```
 self.present(avPlayerViewController, animated: true, completion: nil)
+```
+
+## Plugins
+
+The Player has some functionnalities that can be added to it.
+So far it support Conviva tracking and advertisement.
+To enable Conviva tracking or Advertisment you'll have to provide a configuration for the plugin in the constructor.
+
+```
+let adsConfig = AdsConfig.init()
+let convivaConfig = ConvivaConfig.init(customerKey: "KEY", gatewayUrl: "URL", tags: ["tag1","tag2"])
+
+var favPlayer = FAVPlayer.init(apiUrl: "https://prd-freq.frequency.com",
+                                  token: "TOKEN_ID",
+                                  deviceId: "DEVICE_ID",
+                                  conviva: convivaConfig,
+                                  adsConfig: adsConfig)
 ```
 
 ## The Demo App
