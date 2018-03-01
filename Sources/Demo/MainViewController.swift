@@ -41,11 +41,13 @@ class MainViewController: UIViewController, AdDelegate{
         
         let adsConfig = AdsConfig.init(environment: AdsConfig.Environment.QA, minBitrate: 1, maxBitrate: 2, maxResolution: "720p", minResolution: "340p", deliveryFormat: "progressive", deliveryProtocol: "https", format: "video/mp4")
         
+        let convivaConfig = ConvivaConfig.init(customerKey: "test", gatewayUrl: "test", tags: ["tag1","tag2"])
+        
         playerVC = AVPlayerViewController()
         playerVC?.player = FAVPlayer.init(apiUrl: "https://prd-lgi-api.frequency.com",
                                           token: "",
                                           deviceId: "",
-                                          conviva: nil,
+                                          conviva: convivaConfig,
                                           adsConfig: adsConfig
         )
         

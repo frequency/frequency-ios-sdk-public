@@ -19,4 +19,22 @@ public class ConvivaConfig: NSObject {
         self.tags = tags
         super.init()
     }
+    
+    internal func getStringConfig() -> String{
+        
+        let adsConfigStr = """
+        ['Conviva',
+        {
+        customer_key: '\(self.customerKey)',
+        gateway_url: '\(self.gatewayUrl)',
+        tags: {
+            tag1: '\(self.tags[0])',
+            tag2: '\(self.tags[1])'
+        }
+        }]
+        """
+        
+        return adsConfigStr
+    }
+    
 }

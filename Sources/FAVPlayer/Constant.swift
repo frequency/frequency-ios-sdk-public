@@ -14,10 +14,10 @@ struct PlayerConstants {
     
     static let adsPrdDecisioningUrl = "https://prd-freq-ad-eu.frequency.com"
     static let adsQaDecisioningUrl = "https://qa-freq-ad-decision.frequency.com"
-    static let adsMinBitrate = 100
-    static let adsMaxBitrate = 5000
+    static let adsMinBitrate = 1
+    static let adsMaxBitrate = 16
     static let adsMaxResolution = "720p"
-    static let adsMinResolution = "720p"
+    static let adsMinResolution = "340p"
     static let adsDeliveryFormat = "progressive"
     static let adsDeliveryProtocol = "https"
     static let adsFormat = "video/mp4"
