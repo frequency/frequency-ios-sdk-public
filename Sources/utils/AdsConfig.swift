@@ -9,7 +9,6 @@
 import Foundation
 
 public class AdsConfig : NSObject {
-    
 
     @objc public enum Environment : Int{
         case QA
@@ -44,11 +43,11 @@ public class AdsConfig : NSObject {
     @objc public convenience init(environment: AdsConfig.Environment,
          minBitrate: Int,
          maxBitrate: Int,
-         maxResolution: String? = PlayerConstants.adsMaxResolution,
-         minResolution: String? = PlayerConstants.adsMinResolution,
-         deliveryFormat: String? = PlayerConstants.adsDeliveryFormat,
-         deliveryProtocol: String? = PlayerConstants.adsDeliveryProtocol,
-         format: String? = PlayerConstants.adsFormat) {
+         maxResolution: String?,
+         minResolution: String?,
+         deliveryFormat: String?,
+         deliveryProtocol: String?,
+         format: String?) {
         
         self.init()
         
