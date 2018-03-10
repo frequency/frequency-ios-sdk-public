@@ -98,40 +98,19 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
                 }
                 """
         
-            let convivaConfigStr = """
-                conviva: {
-                    customer_key: '\(convivaConfig?.customerKey ?? "")',
-                    gateway_url: '\(convivaConfig?.gatewayUrl ?? "")',
-                    tags: {
-                        tag1: "\(convivaConfig?.tags[0] ?? "")",
-                        tag2: "\(convivaConfig?.tags[1] ?? "")"
-                    }
-                }
-            """
-        
-            let adsConfigStr = """
-                    ['Ads',
-                    {
-                        url: '\(adsConfig?.url ?? "")',
-                        minBitrate: '\(adsConfig?.minBitrate ?? PlayerConstants.adsMinBitrate)',
-                        maxBitrate: '\(adsConfig?.maxBitrate ?? PlayerConstants.adsMaxBitrate)',
-                        maxResolution: '\(adsConfig?.maxResolution ?? "")',
-                        minResolution: '\(adsConfig?.minResolution ?? "")',
-                        deliveryFormat: '\(adsConfig?.deliveryFormat ?? "")',
-                        deliveryProtocol: '\(adsConfig?.deliveryProtocol ?? "")',
-                        format: '\(adsConfig?.format ?? "")'
-                    }]
-            """
+            let pluginStr = (convivaConfig == nil && adsConfig == nil) ? "" : """
+                , plugins: [
+                    \(adsConfig == nil ? "" : adsConfig?.getStringConfig() ?? "")
+                    \(convivaConfig == nil ? "" : (adsConfig == nil ? "" : ",") + (convivaConfig?.getStringConfig())!)
+                ]
+                """
         
             let playerStr = """
                 window.player = new Frequency.Player({
                     \(apiConfigStr),
                     \(sessionConfigStr),
-                    \(eventConfigStr),
-                    plugins: [
-                        \(adsConfig == nil ? "" : adsConfigStr)
-                        \(convivaConfig == nil ? "" : (adsConfig == nil ? "" : ",") + convivaConfigStr)
-                    ]
+                    \(eventConfigStr)
+                    \(pluginStr)
                 })
             """
             print(playerStr)

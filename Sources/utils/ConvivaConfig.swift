@@ -13,10 +13,28 @@ import Foundation
     var gatewayUrl : String = ""
     var tags : [String]
     
-    public init(customerKey: String, gatewayUrl: String, tags: [String]){
+    @objc public init(customerKey: String, gatewayUrl: String, tags: [String]){
         self.customerKey = customerKey
         self.gatewayUrl = gatewayUrl
         self.tags = tags
         super.init()
     }
+    
+    internal func getStringConfig() -> String{
+        
+        let adsConfigStr = """
+        ['Conviva',
+        {
+        customer_key: '\(self.customerKey)',
+        gateway_url: '\(self.gatewayUrl)',
+        tags: {
+            tag1: '\(self.tags[0])',
+            tag2: '\(self.tags[1])'
+        }
+        }]
+        """
+        
+        return adsConfigStr
+    }
+    
 }
