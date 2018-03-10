@@ -10,7 +10,7 @@ import Foundation
 
 struct PlayerConstants {
     static let apiURL = "https://prd-freq.frequency.com"
-    static let playerURL = "https://static.frequency.com/player/3.1.0/playerEmbed.js"
+    static let playerURL = "https://static.frequency.com/player/3.1.1/playerEmbed.js"
     
     static let adsPrdDecisioningUrl = "https://prd-freq-ad-eu.frequency.com"
     static let adsQaDecisioningUrl = "https://qa-freq-ad-decision.frequency.com"
