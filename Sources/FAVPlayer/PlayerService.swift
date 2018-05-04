@@ -100,7 +100,7 @@ class PlayerService : NSObject, PlayerEventDelegate, JSPlayerInterface, JSCallba
         
             let pluginStr = (convivaConfig == nil && adsConfig == nil) ? "" : """
                 , plugins: [
-                    \(adsConfig == nil ? "" : adsConfig?.getStringConfig() ?? "")
+                    \(adsConfig == nil ? "" : adsConfig?.getIMAAdsStringConfig() ?? "")
                     \(convivaConfig == nil ? "" : (adsConfig == nil ? "" : ",") + (convivaConfig?.getStringConfig())!)
                 ]
                 """

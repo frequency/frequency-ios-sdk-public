@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/Demo/MainViewController.swift"
-            timestampString = "540350220.824039"
+            timestampString = "547169090.005307"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "playVideo(_:)"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "f4(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/FAVPlayer/PlayerService.swift"
-            timestampString = "540350220.824589"
+            timestampString = "547169090.005612"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "180"
@@ -58,12 +58,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/FAVPlayer/PlayerService.swift"
-            timestampString = "540350220.8246469"
+            timestampString = "547169090.006224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "126"
             endingLineNumber = "126"
-            landmarkName = "init(baseUrl:authToken:deviceId:convivaConfig:player:)"
+            landmarkName = "init(baseUrl:authToken:deviceId:convivaConfig:adsConfig:player:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Demo/MainViewController.swift"
+            timestampString = "547169090.0064"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "initPlayer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +90,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/Demo/MainViewController.swift"
-            timestampString = "540350220.8247139"
+            timestampString = "547169090.006539"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "initPlayer()"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "onAdReady(title:duration:skipOffset:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/FAVPlayer/PlayerService.swift"
+            timestampString = "547169090.0066741"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "onStateChange(playbackState:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
