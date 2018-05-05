@@ -42,8 +42,8 @@ class MainViewController: UIViewController, AdDelegate{
         
         playerVC = AVPlayerViewController()
         playerVC?.player = FAVPlayer.init(apiUrl: "https://qa-lgi-api.frequency.com",
-                                          token: "e9045653-68c6-4ad1-a04d-76fdae7c8d6b",
-                                          deviceId: "58955ef1-8e5f-626d",
+                                          token: "9968beea-d986-4b84-a2f2-b70b338814e0",
+                                          deviceId: "58cb69a2-4b64-ca28",
                                           conviva: nil,
                                           adsConfig: adsConfig
         )
